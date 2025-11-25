@@ -86,6 +86,7 @@ function maysternya_scripts() {
     // Additional CSS files
     wp_enqueue_style('maysternya-sections', MAYSTERNYA_URI . '/css/sections.css', array('maysternya-style'), MAYSTERNYA_VERSION);
     wp_enqueue_style('maysternya-footer', MAYSTERNYA_URI . '/css/footer.css', array('maysternya-style'), MAYSTERNYA_VERSION);
+    wp_enqueue_style('maysternya-responsive', MAYSTERNYA_URI . '/css/responsive.css', array('maysternya-style'), MAYSTERNYA_VERSION);
     
     // Main JavaScript
     wp_enqueue_script('maysternya-main', MAYSTERNYA_URI . '/js/main.js', array(), MAYSTERNYA_VERSION, true);
