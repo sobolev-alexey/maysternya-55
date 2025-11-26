@@ -1,6 +1,6 @@
 <?php
 /**
- * Front Page Template - Matches Figma Design Exactly
+ * Front Page Template - Exact Match to Figma Design
  *
  * @package Maysternya
  */
@@ -24,7 +24,7 @@ get_header();
     
     <div class="hero-content">
         <h1 class="hero-title" data-testid="hero-title">
-            <?php echo nl2br(esc_html(get_theme_mod('hero_title', "IN\nTHEATRE\nWE TRUST"))); ?>
+            IN<br>THEATRE<br>WE TRUST
         </h1>
         <a href="<?php echo esc_url(get_theme_mod('hero_button_link', get_post_type_archive_link('performance'))); ?>" class="btn btn-primary" data-testid="hero-cta">
             <?php echo esc_html(get_theme_mod('hero_button_text', 'GO TO PERFORMANCES')); ?>
@@ -60,7 +60,7 @@ get_header();
                             <?php if (has_post_thumbnail()) : ?>
                                 <?php the_post_thumbnail('project-card'); ?>
                             <?php else : ?>
-                                <img src="https://placehold.co/600x400/1a1a2e/1a1a2e.png" alt="<?php the_title_attribute(); ?>">
+                                <img src="https://placehold.co/600x600/1a1a2e/1a1a2e.png" alt="<?php the_title_attribute(); ?>">
                             <?php endif; ?>
                             <div class="project-overlay">
                                 <span class="project-badge"><?php _e('MAYSTERNYA 55', 'maysternya'); ?></span>
@@ -82,29 +82,29 @@ get_header();
                 endwhile;
                 wp_reset_postdata();
             else :
-                // Default placeholder projects matching Figma design
+                // Default placeholder projects matching Figma design - SQUARE images
                 $placeholder_projects = array(
                     array(
-                        'title' => 'FIVE MINUTES TO ZERO',
-                        'author' => 'J.Soyref',
-                        'director' => 'Director: Leonid Sadovsky',
-                        'color' => '1a1a2e',
-                    ),
-                    array(
-                        'title' => "ZUKUNF/ST\nFESTIVAL",
-                        'location' => 'BERLIN',
-                        'color' => '1a3a5c',
+                        'title' => "FLIPT\nFESTIVAL",
+                        'location' => 'FARA-IN-SABINA',
+                        'color' => '2a3a5a',
                     ),
                     array(
                         'title' => "THREE\nSISTERS",
                         'author' => 'A.P Chekhov',
                         'director' => 'Director: Leonid Sadovsky',
-                        'color' => '2a2a3e',
+                        'color' => '1a1a2e',
                     ),
                     array(
-                        'title' => "FLIPT\nFESTIVAL",
-                        'location' => 'FARA-IN-SABINA',
-                        'color' => '3a2a4e',
+                        'title' => 'FIVE MINUTES TO ZERO',
+                        'author' => 'J.Soyref',
+                        'director' => 'Director: Leonid Sadovsky',
+                        'color' => '0a0a1a',
+                    ),
+                    array(
+                        'title' => "ZUKUNF/ST\nFESTIVAL",
+                        'location' => 'BERLIN',
+                        'color' => '1a3a5c',
                     ),
                 );
 
@@ -112,7 +112,7 @@ get_header();
             ?>
                 <article class="project-card" data-testid="project-card-placeholder">
                     <div class="project-image">
-                        <img src="https://placehold.co/600x400/<?php echo $project['color']; ?>/<?php echo $project['color']; ?>.png" alt="<?php echo esc_attr($project['title']); ?>">
+                        <img src="https://placehold.co/600x600/<?php echo $project['color']; ?>/<?php echo $project['color']; ?>.png" alt="<?php echo esc_attr(str_replace("\n", ' ', $project['title'])); ?>">
                         <div class="project-overlay">
                             <span class="project-badge"><?php _e('MAYSTERNYA 55', 'maysternya'); ?></span>
                             <h3 class="project-title"><?php echo nl2br(esc_html($project['title'])); ?></h3>
@@ -171,7 +171,7 @@ get_header();
                     <article class="event-card" data-testid="event-card">
                         <div class="event-date">
                             <span class="event-day"><?php echo esc_html($formatted_date); ?></span>
-                            <span class="event-time"><?php echo esc_html($time ?: '7:00PM'); ?></span>
+                            <span class="event-time"><?php echo esc_html($time ?: '7:00pm'); ?></span>
                         </div>
                         <div class="event-content">
                             <span class="event-type"><?php _e('PERFORMANCE', 'maysternya'); ?></span>
@@ -200,22 +200,22 @@ get_header();
                 $placeholder_events = array(
                     array(
                         'date' => '11/03',
-                        'time' => '2:30PM',
+                        'time' => '2:30pm',
                         'title' => "THREE\nSISTERS",
                         'author' => 'A.P. Chekhov',
                         'color' => '2a2a3e',
                     ),
                     array(
                         'date' => '18/03',
-                        'time' => '8:30PM',
+                        'time' => '8:30pm',
                         'title' => "FIVE MINUTES\nTO ZERO",
                         'author' => 'J.Soyref',
                         'color' => '1a1a2e',
                     ),
                     array(
                         'date' => '27/04',
-                        'time' => '6:30PM',
-                        'title' => "JESUS CHRIST\nSUPERSTAR",
+                        'time' => '6:30pm',
+                        'title' => "JESUS CRIST\nSUPERSTAR",
                         'author' => 'A.Webber and T. Rice',
                         'color' => '3a2a4e',
                     ),
@@ -235,7 +235,7 @@ get_header();
                         <p class="event-director"><?php _e('Director: Leonid Sadovsky', 'maysternya'); ?></p>
                     </div>
                     <div class="event-image">
-                        <img src="https://placehold.co/400x400/<?php echo $event['color']; ?>/<?php echo $event['color']; ?>.png" alt="<?php echo esc_attr($event['title']); ?>">
+                        <img src="https://placehold.co/400x400/<?php echo $event['color']; ?>/<?php echo $event['color']; ?>.png" alt="<?php echo esc_attr(str_replace("\n", ' ', $event['title'])); ?>">
                     </div>
                     <div class="event-action">
                         <a href="#" class="btn btn-dark"><?php _e('BUY TICKETS', 'maysternya'); ?></a>
