@@ -4,7 +4,7 @@ Theme URI: https://maysternya55.com
 Author: Maysternya Team
 Author URI: https://maysternya55.com
 Description: A modern, dark-themed WordPress theme for Maysternya 55 Theatre. Features responsive design with mobile-first approach, custom navigation, and easy content management.
-Version: 1.0.0
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: maysternya
@@ -12,27 +12,35 @@ Tags: theater, dark, responsive, custom-menu, featured-images
 */
 
 /* ==========================================
-   CSS VARIABLES
+   CSS VARIABLES - EXACT MATCH TO FIGMA
    ========================================== */
 :root {
     --color-bg-primary: #000000;
-    --color-bg-secondary: #111111;
-    --color-bg-card: #1a1a1a;
+    --color-bg-secondary: #0a0a0a;
+    --color-bg-card: #111111;
+    --color-bg-dark-blue: #1a1a2e;
     --color-text-primary: #ffffff;
     --color-text-secondary: #cccccc;
     --color-text-muted: #888888;
     --color-accent: #0066ff;
     --color-accent-light: #4d94ff;
+    --color-divider: rgba(255, 255, 255, 0.15);
+    
     --font-primary: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
     --font-heading: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+    
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
     --spacing-xxl: 5rem;
+    --spacing-xxxl: 8rem;
+    
     --container-max: 1400px;
+    --container-padding: 60px;
     --header-height: 80px;
+    
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
 }
@@ -57,6 +65,8 @@ body {
     color: var(--color-text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -66,7 +76,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-accent-light);
+    color: var(--color-text-secondary);
 }
 
 img {
@@ -87,19 +97,20 @@ button {
 }
 
 /* ==========================================
-   TYPOGRAPHY
+   TYPOGRAPHY - EXACT MATCH
    ========================================== */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 500;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 8vw, 6rem);
-    letter-spacing: 0.15em;
+    font-size: clamp(3rem, 10vw, 8rem);
+    letter-spacing: 0.02em;
+    line-height: 0.95;
 }
 
 h2 {
@@ -124,43 +135,54 @@ p {
     padding: 0 var(--spacing-md);
 }
 
+@media (min-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 var(--container-padding);
+    }
+}
+
 .section {
     padding: var(--spacing-xxl) 0;
 }
 
 /* ==========================================
-   BUTTONS
+   BUTTONS - EXACT MATCH TO FIGMA
    ========================================== */
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-sm) var(--spacing-lg);
+    padding: 14px 32px;
     font-family: var(--font-heading);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: 500;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     transition: var(--transition-normal);
-    border: 2px solid transparent;
-    min-width: 200px;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-primary {
     background-color: var(--color-text-primary);
     color: var(--color-bg-primary);
-    border-color: var(--color-text-primary);
 }
 
 .btn-primary:hover {
-    background-color: transparent;
-    color: var(--color-text-primary);
+    background-color: var(--color-text-secondary);
+    color: var(--color-bg-primary);
 }
 
 .btn-secondary {
     background-color: transparent;
     color: var(--color-text-primary);
-    border-color: var(--color-text-primary);
+    border: 1px solid var(--color-text-primary);
 }
 
 .btn-secondary:hover {
@@ -171,7 +193,7 @@ p {
 .btn-dark {
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
-    border-color: var(--color-bg-primary);
+    border: 1px solid var(--color-bg-primary);
 }
 
 .btn-dark:hover {
@@ -179,7 +201,7 @@ p {
 }
 
 /* ==========================================
-   HEADER & NAVIGATION
+   HEADER & NAVIGATION - EXACT MATCH
    ========================================== */
 .site-header {
     position: fixed;
@@ -189,12 +211,7 @@ p {
     z-index: 1000;
     background-color: var(--color-bg-primary);
     height: var(--header-height);
-    transition: var(--transition-normal);
-}
-
-.site-header.scrolled {
-    background-color: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-divider);
 }
 
 .header-inner {
@@ -203,6 +220,8 @@ p {
     justify-content: space-between;
     height: 100%;
     padding: 0 var(--spacing-lg);
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 /* Logo */
@@ -211,14 +230,15 @@ p {
     align-items: center;
     gap: var(--spacing-sm);
     font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 500;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
 }
 
-.site-logo img {
-    height: 40px;
+.site-logo img,
+.site-logo svg {
+    height: 32px;
     width: auto;
 }
 
@@ -226,13 +246,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-}
-
-.logo-icon svg {
-    width: 100%;
-    height: 100%;
+    width: 32px;
+    height: 32px;
 }
 
 /* Desktop Navigation */
@@ -244,14 +259,13 @@ p {
     .main-nav {
         display: flex;
         align-items: center;
-        gap: var(--spacing-lg);
     }
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
 }
 
 .nav-item {
@@ -261,11 +275,11 @@ p {
 .nav-link {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 6px;
     padding: var(--spacing-xs) 0;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     transition: var(--transition-fast);
 }
@@ -275,7 +289,7 @@ p {
 }
 
 .nav-link .arrow {
-    font-size: 0.625rem;
+    font-size: 0.5rem;
     transition: var(--transition-fast);
 }
 
@@ -288,9 +302,9 @@ p {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 220px;
+    min-width: 240px;
     background-color: var(--color-bg-primary);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--color-divider);
     padding: var(--spacing-sm) 0;
     opacity: 0;
     visibility: hidden;
@@ -306,19 +320,18 @@ p {
 
 .dropdown-item {
     display: block;
-    padding: var(--spacing-xs) var(--spacing-md);
-    font-size: 0.8125rem;
-    letter-spacing: 0.05em;
+    padding: 10px var(--spacing-md);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: var(--transition-fast);
 }
 
 .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.05);
-    color: var(--color-text-primary);
 }
 
-/* Header Social & Language */
+/* Header Actions */
 .header-actions {
     display: none;
 }
@@ -341,30 +354,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
-    transition: var(--transition-fast);
-}
-
-.social-link:hover {
-    opacity: 0.7;
+    width: 24px;
+    height: 24px;
 }
 
 .social-link svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     fill: currentColor;
 }
 
 .lang-selector {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 6px;
+    font-size: 0.75rem;
     cursor: pointer;
 }
 
 .lang-selector img {
-    width: 24px;
+    width: 20px;
     height: auto;
     border-radius: 2px;
 }
@@ -374,9 +383,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6px;
-    width: 30px;
-    height: 30px;
+    gap: 5px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 
@@ -403,7 +412,7 @@ p {
 }
 
 .mobile-menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Mobile Menu */
@@ -418,6 +427,7 @@ p {
     transform: translateX(100%);
     transition: var(--transition-normal);
     overflow-y: auto;
+    z-index: 999;
 }
 
 .mobile-menu.active {
@@ -427,11 +437,10 @@ p {
 .mobile-nav-menu {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
 }
 
 .mobile-nav-item {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--color-divider);
 }
 
 .mobile-nav-link {
@@ -439,9 +448,9 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: var(--spacing-md) 0;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
 }
 
@@ -456,10 +465,10 @@ p {
 
 .mobile-dropdown-item {
     display: block;
-    padding: var(--spacing-xs) 0;
+    padding: var(--spacing-sm) 0;
     padding-left: var(--spacing-md);
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
+    font-size: 0.8125rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-text-secondary);
 }
@@ -467,8 +476,8 @@ p {
 .mobile-social {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
     margin-top: var(--spacing-xl);
     padding-top: var(--spacing-lg);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--color-divider);
 }

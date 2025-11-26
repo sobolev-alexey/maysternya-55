@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+    <title>Maysternya 55</title>
+    <link>https://maysternya55.com</link>
+    <description>Independent Ukrainian Theatre</description>
+    <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://maysternya55.com</wp:base_site_url>
+    <wp:base_blog_url>https://maysternya55.com</wp:base_blog_url>
+
+    <!-- Categories -->
+    <wp:category>
+        <wp:term_id>1</wp:term_id>
+        <wp:category_nicename>performances</wp:category_nicename>
+        <wp:category_parent></wp:category_parent>
+        <wp:cat_name><![CDATA[Performances]]></wp:cat_name>
+    </wp:category>
+
+    <!-- Authors -->
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[maysternya55@gmail.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Maysternya 55]]></wp:author_display_name>
+    </wp:author>
+
+    <!-- HOME PAGE -->
+    <item>
+        <title>Home</title>
+        <link>https://maysternya55.com/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://maysternya55.com/?page_id=2</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+<!-- Hero Section -->
+<section class="hero-section" data-testid="hero-section">
+    <div class="hero-background">
+        <img src="https://placehold.co/1920x1080/1a1a2e/1a1a2e.png" alt="Hero Background" class="hero-bg-image">
+        <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">IN<br>THEATRE<br>WE TRUST</h1>
+        <a href="/performances" class="btn btn-primary">GO TO PERFORMANCES</a>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">PROJECTS</h2>
+            <span class="section-subtitle">MAYSTERNYA 55</span>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="https://placehold.co/600x400/1a1a2e/1a1a2e.png" alt="Five Minutes to Zero">
+                    <div class="project-overlay">
+                        <span class="project-badge">MAYSTERNYA 55</span>
+                        <h3 class="project-title">FIVE MINUTES TO ZERO</h3>
+                        <p class="project-author">J.Soyref</p>
+                        <p class="project-director">Director: Leonid Sadovsky</p>
+                        <a href="#" class="btn btn-secondary">LEARN MORE</a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="https://placehold.co/600x400/1a3a5c/1a3a5c.png" alt="Zukunf/st Festival">
+                    <div class="project-overlay">
+                        <span class="project-badge">MAYSTERNYA 55</span>
+                        <h3 class="project-title">ZUKUNF/ST<br>FESTIVAL</h3>
+                        <p class="project-location">BERLIN</p>
+                        <a href="#" class="btn btn-secondary">LEARN MORE</a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 3 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="https://placehold.co/600x400/2a2a3e/2a2a3e.png" alt="Three Sisters">
+                    <div class="project-overlay">
+                        <span class="project-badge">MAYSTERNYA 55</span>
+                        <h3 class="project-title">THREE<br>SISTERS</h3>
+                        <p class="project-author">A.P Chekhov</p>
+                        <p class="project-director">Director: Leonid Sadovsky</p>
+                        <a href="#" class="btn btn-secondary">LEARN MORE</a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 4 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="https://placehold.co/600x400/3a2a4e/3a2a4e.png" alt="FLIPT Festival">
+                    <div class="project-overlay">
+                        <span class="project-badge">MAYSTERNYA 55</span>
+                        <h3 class="project-title">FLIPT<br>FESTIVAL</h3>
+                        <p class="project-location">FARA-IN-SABINA</p>
+                        <a href="#" class="btn btn-secondary">LEARN MORE</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section class="events-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">EVENTS</h2>
+        </div>
+        
+        <div class="events-list">
+            <!-- Event 1 -->
+            <article class="event-card">
+                <div class="event-date">
+                    <span class="event-day">11/03</span>
+                    <span class="event-time">2:30PM</span>
+                </div>
+                <div class="event-content">
+                    <span class="event-type">PERFORMANCE</span>
+                    <h3 class="event-title">THREE<br>SISTERS</h3>
+                    <p class="event-author">Author: A.P. Chekhov</p>
+                    <p class="event-director">Director: Leonid Sadovsky</p>
+                </div>
+                <div class="event-image">
+                    <img src="https://placehold.co/400x400/2a2a3e/2a2a3e.png" alt="Three Sisters">
+                </div>
+                <div class="event-action">
+                    <a href="#" class="btn btn-dark">BUY TICKETS</a>
+                </div>
+            </article>
+            
+            <!-- Event 2 -->
+            <article class="event-card">
+                <div class="event-date">
+                    <span class="event-day">18/03</span>
+                    <span class="event-time">8:30PM</span>
+                </div>
+                <div class="event-content">
+                    <span class="event-type">PERFORMANCE</span>
+                    <h3 class="event-title">FIVE MINUTES<br>TO ZERO</h3>
+                    <p class="event-author">Author: J.Soyref</p>
+                    <p class="event-director">Director: Leonid Sadovsky</p>
+                </div>
+                <div class="event-image">
+                    <img src="https://placehold.co/400x400/1a1a2e/1a1a2e.png" alt="Five Minutes to Zero">
+                </div>
+                <div class="event-action">
+                    <a href="#" class="btn btn-dark">BUY TICKETS</a>
+                </div>
+            </article>
+            
+            <!-- Event 3 -->
+            <article class="event-card">
+                <div class="event-date">
+                    <span class="event-day">27/04</span>
+                    <span class="event-time">6:30PM</span>
+                </div>
+                <div class="event-content">
+                    <span class="event-type">PERFORMANCE</span>
+                    <h3 class="event-title">JESUS CHRIST<br>SUPERSTAR</h3>
+                    <p class="event-author">Author: A.Webber and T. Rice</p>
+                    <p class="event-director">Director: Leonid Sadovsky</p>
+                </div>
+                <div class="event-image">
+                    <img src="https://placehold.co/400x400/3a2a4e/3a2a4e.png" alt="Jesus Christ Superstar">
+                </div>
+                <div class="event-action">
+                    <a href="#" class="btn btn-dark">BUY TICKETS</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-section">
+    <div class="about-hero">
+        <div class="about-hero-background">
+            <img src="https://placehold.co/1920x800/1a2a3e/1a2a3e.png" alt="About Us Background">
+            <div class="about-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="about-hero-content">
+                <span class="about-pretitle">ABOUT US</span>
+                <h2 class="about-hero-title">MORE THAN A<br>THEATRE</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="about-content">
+            <div class="about-intro">
+                <p class="about-tagline">MAYSTERNYA 55 –<br>INDEPENDENT UKRAINIAN<br>THEATRE WITH<br>INTERNATIONAL ACTIVITIES<br>AND ITS OWN UNIQUE METHOD.</p>
+            </div>
+            <div class="about-description">
+                <p>Founded in 2006 in Kharkiv by director and teacher Leonid Sadovsky, the theater grew out of an author's acting course at the I. P. Kotlyarevsky Kharkiv National University of Arts. It is based on a unique method that combines dramatic theater with modern performative practices, the depth of psychological theater with the expressiveness of the body, and performances with educational projects.</p>
+                <p>Today "MAYSTERNYA 55" is more than a theater. It is a laboratory where classics and modernity, traditions and innovations, content and form, feelings and thoughts meet. It is a space for creative search, experimentation and love. It is a theater about the idea that lives in people, and about people who live by this idea.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        ]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>2</wp:post_id>
+        <wp:post_date><![CDATA[2024-11-25 00:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2024-11-25 00:00:00]]></wp:post_date_gmt>
+        <wp:post_modified><![CDATA[2024-11-25 00:00:00]]></wp:post_modified>
+        <wp:post_modified_gmt><![CDATA[2024-11-25 00:00:00]]></wp:post_modified_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[home]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+            <wp:meta_value><![CDATA[front-page.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+</channel>
+</rss>
