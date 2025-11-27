@@ -51,7 +51,17 @@
 
 /* Project Card Preview */
 .project-card-preview {
-    max-width: 400px;
+    max-width: 500px;
+}
+
+.project-card-preview .project-card-editor {
+    border-radius: 0;
+}
+
+.project-card-preview h3 {
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
 }
 
 /* Event Card Preview */
