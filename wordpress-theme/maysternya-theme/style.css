@@ -2,8 +2,8 @@
 Theme Name: Maysternya 55 Theatre
 Theme URI: https://maysternya55.com
 Author: Maysternya Team
-Description: A modern, dark-themed WordPress theme for Maysternya 55 Theatre.
-Version: 1.3.0
+Description: A modern, dark-themed WordPress theme for Maysternya 55 Theatre - pixel-perfect recreation of Figma design.
+Version: 2.0.0
 Text Domain: maysternya
 */
 
@@ -27,17 +27,17 @@ Text Domain: maysternya
 }
 
 /* ==========================================
-   CSS VARIABLES
+   CSS VARIABLES - Black & White Design
    ========================================== */
 :root {
     --color-bg: #000000;
-    --color-text: #ffffff;
-    --color-text-muted: #999999;
-    --color-border: #ffffff;
+    --color-text: #FFFFFF;
+    --color-border: #FFFFFF;
     --font-heading: 'Kharkiv Tone', sans-serif;
     --font-body: 'Jost', sans-serif;
     --header-height: 80px;
     --container-max: 1400px;
+    --container-padding: 80px;
 }
 
 /* ==========================================
@@ -60,11 +60,17 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
     color: var(--color-text);
     text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
 }
 
 img {
@@ -74,7 +80,7 @@ img {
 }
 
 ul, ol { list-style: none; }
-button { cursor: pointer; border: none; background: none; font-family: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; color: inherit; }
 
 /* ==========================================
    TYPOGRAPHY
@@ -84,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     text-transform: uppercase;
     line-height: 0.9;
+    letter-spacing: 0.02em;
 }
 
 /* ==========================================
@@ -101,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1200px) {
-    .container { padding: 0 80px; }
+    .container { padding: 0 var(--container-padding); }
 }
 
 /* ==========================================
@@ -118,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--color-text);
     transition: all 0.3s ease;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn-primary {
@@ -128,6 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
     background: transparent;
     color: var(--color-text);
+    opacity: 1;
 }
 
 .btn-outline {
@@ -138,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline:hover {
     background: var(--color-text);
     color: var(--color-bg);
+    opacity: 1;
 }
 
 /* ==========================================
@@ -151,6 +161,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
     background: var(--color-bg);
     height: var(--header-height);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .header-inner {
@@ -161,22 +172,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 40px;
 }
 
-/* Logo area - MAYSTERNYA text on left, then logo icon */
+/* Logo area */
 .site-branding {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
+.site-branding:hover {
+    opacity: 1;
+}
+
 .site-title {
     font-family: var(--font-heading);
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
 
 .site-logo img {
-    height: 32px;
+    height: 28px;
     width: auto;
 }
 
@@ -213,12 +228,13 @@ h1, h2, h3, h4, h5, h6 {
     gap: 6px;
 }
 
-.nav-link:hover {
-    opacity: 0.7;
-}
-
 .nav-link .arrow {
     font-size: 8px;
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover .nav-link .arrow {
+    transform: rotate(180deg);
 }
 
 /* Dropdown */
@@ -226,15 +242,15 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 200px;
+    min-width: 220px;
     background: var(--color-bg);
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 12px 0;
+    border: 1px solid var(--color-border);
+    padding: 16px 0;
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     transition: all 0.3s ease;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 .nav-item:hover .dropdown-menu {
@@ -245,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-item {
     display: block;
-    padding: 10px 24px;
+    padding: 12px 24px;
     font-size: 11px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -253,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-item:hover {
     background: rgba(255,255,255,0.05);
+    opacity: 1;
 }
 
 /* Header right side */
@@ -268,6 +285,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Social Links */
 .social-links {
     display: flex;
     align-items: center;
@@ -280,23 +298,30 @@ h1, h2, h3, h4, h5, h6 {
     fill: currentColor;
 }
 
-/* Language Selector with dropdown */
+/* Language Selector */
 .lang-selector {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     cursor: pointer;
+    padding: 8px 0;
 }
 
-.lang-selector img {
-    width: 20px;
-    height: 14px;
+.lang-selector .current-flag {
+    width: 24px;
+    height: 16px;
     object-fit: cover;
+    border-radius: 2px;
 }
 
 .lang-selector .arrow {
     font-size: 8px;
+    transition: transform 0.3s ease;
+}
+
+.lang-selector:hover .arrow {
+    transform: rotate(180deg);
 }
 
 .lang-dropdown {
@@ -304,14 +329,14 @@ h1, h2, h3, h4, h5, h6 {
     top: 100%;
     right: 0;
     background: var(--color-bg);
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid var(--color-border);
     padding: 8px 0;
-    min-width: 140px;
+    min-width: 160px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
     transition: all 0.3s ease;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 .lang-selector:hover .lang-dropdown {
@@ -323,11 +348,12 @@ h1, h2, h3, h4, h5, h6 {
 .lang-option {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 8px 16px;
-    font-size: 11px;
+    gap: 12px;
+    padding: 10px 16px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .lang-option:hover {
@@ -335,17 +361,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lang-option img {
-    width: 20px;
-    height: 14px;
+    width: 24px;
+    height: 16px;
     object-fit: cover;
+    border-radius: 2px;
 }
 
 /* Mobile toggle */
 .mobile-menu-toggle {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 24px;
+    justify-content: center;
+    gap: 6px;
+    width: 28px;
+    height: 28px;
+    padding: 0;
 }
 
 @media (min-width: 1024px) {
@@ -356,9 +386,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-menu-toggle span {
     display: block;
-    height: 1.5px;
+    height: 1px;
     background: var(--color-text);
     transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Mobile Menu */
@@ -374,6 +416,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 0.3s ease;
     overflow-y: auto;
     z-index: 999;
+    border-top: 1px solid var(--color-border);
 }
 
 .mobile-menu.active {
@@ -408,5 +451,59 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 0 12px 16px;
     font-size: 12px;
     letter-spacing: 0.1em;
-    color: var(--color-text-muted);
+    opacity: 0.7;
+}
+
+/* Mobile lang selector */
+.mobile-lang-selector {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.mobile-lang-options {
+    display: flex;
+    gap: 16px;
+}
+
+.mobile-lang-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid var(--color-border);
+    font-size: 12px;
+}
+
+.mobile-lang-option img {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+}
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+.site-main {
+    padding-top: var(--header-height);
+}
+
+/* ==========================================
+   UTILITIES
+   ========================================== */
+body.menu-open { overflow: hidden; }
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+@media (max-width: 767px) {
+    :root { --header-height: 60px; }
 }

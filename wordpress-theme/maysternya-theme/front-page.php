@@ -1,6 +1,7 @@
 <?php
 /**
  * Front Page Template - Exact Match to Figma Design
+ * Black background, white text/borders only
  *
  * @package Maysternya
  */
@@ -11,7 +12,7 @@ get_header();
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="hero-background">
-        <img src="https://placehold.co/1920x1080/1a1a2e/1a1a2e.png" alt="">
+        <img src="https://placehold.co/1920x1080/000000/000000.png" alt="">
         <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -25,6 +26,7 @@ get_header();
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">PROJECTS</h2>
+            <span class="section-subtitle">MAYSTERNYA 55</span>
         </div>
 
         <div class="projects-grid">
@@ -35,27 +37,23 @@ get_header();
                     'title' => "FLIPT\nFESTIVAL",
                     'location' => 'FARA-IN-SABINA',
                     'link' => '#',
-                    'color' => '2a3a5a',
                 ),
                 array(
                     'title' => "THREE\nSISTERS",
                     'author' => 'A.P Chekhov',
                     'director' => 'Director: Leonid Sadovsky',
                     'link' => '#',
-                    'color' => '1a1a2e',
                 ),
                 array(
                     'title' => 'FIVE MINUTES TO ZERO',
-                    'author' => 'J. Soyref',
+                    'author' => 'J.Soyref',
                     'director' => 'Director: Leonid Sadovsky',
                     'link' => '#',
-                    'color' => '0a0a1a',
                 ),
                 array(
                     'title' => "ZUKUNF/ST\nFESTIVAL",
                     'location' => 'BERLIN',
                     'link' => '#',
-                    'color' => '1a3a5c',
                 ),
             );
 
@@ -65,7 +63,7 @@ get_header();
                 <a href="<?php echo esc_url($project['link']); ?>">
                     <!-- Square Image with text ON TOP -->
                     <div class="project-image-wrapper">
-                        <img src="https://placehold.co/600x600/<?php echo $project['color']; ?>/<?php echo $project['color']; ?>.png" alt="">
+                        <img src="https://placehold.co/600x600/1a1a1a/1a1a1a.png" alt="">
                         <div class="project-overlay">
                             <span class="project-badge">MAYSTERNYA 55</span>
                             <h3 class="project-title"><?php echo nl2br(esc_html($project['title'])); ?></h3>
@@ -90,7 +88,7 @@ get_header();
     </div>
 </section>
 
-<!-- Events Section - 3 Columns -->
+<!-- Events Section - 3 Columns on Desktop -->
 <section class="events-section">
     <div class="container">
         <div class="section-header">
@@ -107,7 +105,6 @@ get_header();
                     'title' => "THREE\nSISTERS",
                     'author' => 'A.P. Chekhov',
                     'director' => 'Director: Leonid Sadovsky',
-                    'color' => '2a2a3e',
                 ),
                 array(
                     'date' => '18/03',
@@ -115,7 +112,6 @@ get_header();
                     'title' => "FIVE MINUTES\nTO ZERO",
                     'author' => 'J.Soyref',
                     'director' => 'Director: Leonid Sadovsky',
-                    'color' => '1a1a2e',
                 ),
                 array(
                     'date' => '27/04',
@@ -123,7 +119,6 @@ get_header();
                     'title' => "JESUS CRIST\nSUPERSTAR",
                     'author' => 'A.Webber and T. Rice',
                     'director' => 'Director: Leonid Sadovsky',
-                    'color' => '3a2a4e',
                 ),
             );
 
@@ -146,7 +141,7 @@ get_header();
                 
                 <!-- Column 3: Image -->
                 <div class="event-col-image">
-                    <img src="https://placehold.co/400x400/<?php echo $event['color']; ?>/<?php echo $event['color']; ?>.png" alt="">
+                    <img src="https://placehold.co/400x400/1a1a1a/1a1a1a.png" alt="">
                 </div>
             </article>
             <?php endforeach; ?>
@@ -159,7 +154,7 @@ get_header();
     <!-- Hero Image with centered text and CTA -->
     <div class="about-hero">
         <div class="about-hero-bg">
-            <img src="https://placehold.co/1920x900/1a2a3e/1a2a3e.png" alt="">
+            <img src="https://placehold.co/1920x900/1a1a1a/1a1a1a.png" alt="">
             <div class="about-hero-overlay"></div>
         </div>
         <div class="about-hero-content">
@@ -169,7 +164,7 @@ get_header();
         </div>
     </div>
     
-    <!-- Content Below: Title + Two Paragraphs -->
+    <!-- Content Below: Two columns - Tagline + Description -->
     <div class="about-content">
         <div class="container">
             <div class="about-inner">

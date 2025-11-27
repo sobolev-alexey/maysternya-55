@@ -65,15 +65,11 @@
                 </a>
             </div>
             
-            <!-- Language Selector with UK, German, Ukrainian -->
+            <!-- Language Selector with German and Ukrainian -->
             <div class="lang-selector">
-                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-uk.svg" alt="English">
+                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-de.svg" alt="Deutsch" class="current-flag">
                 <span class="arrow">▾</span>
                 <div class="lang-dropdown">
-                    <div class="lang-option">
-                        <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-uk.svg" alt="">
-                        <span>English</span>
-                    </div>
                     <div class="lang-option">
                         <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-de.svg" alt="">
                         <span>Deutsch</span>
@@ -127,6 +123,20 @@
             </li>
         </ul>
     </nav>
+    
+    <!-- Mobile Language Selector -->
+    <div class="mobile-lang-selector">
+        <div class="mobile-lang-options">
+            <div class="mobile-lang-option">
+                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-de.svg" alt="">
+                <span>DE</span>
+            </div>
+            <div class="mobile-lang-option">
+                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-ua.svg" alt="">
+                <span>UA</span>
+            </div>
+        </div>
+    </div>
 </div>
 
 <main id="main" class="site-main">
