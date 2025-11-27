@@ -345,41 +345,54 @@ function maysternya_render_block_timeline($attributes) {
 
 // Project Card Block
 function maysternya_render_block_project_card($attributes) {
-    $title = isset($attributes['title']) ? $attributes['title'] : 'Project Title';
+    $title = isset($attributes['title']) ? $attributes['title'] : '';
     $image = isset($attributes['imageUrl']) ? $attributes['imageUrl'] : '';
     $link = isset($attributes['link']) ? $attributes['link'] : '#';
-    $badge = isset($attributes['badge']) ? $attributes['badge'] : 'MAYSTERNYA 55';
+    $badge = isset($attributes['badge']) ? $attributes['badge'] : '';
     $location = isset($attributes['location']) ? $attributes['location'] : '';
     $author = isset($attributes['author']) ? $attributes['author'] : '';
     $director = isset($attributes['director']) ? $attributes['director'] : '';
+    $buttonText = isset($attributes['buttonText']) ? $attributes['buttonText'] : '';
+    $buttonUrl = isset($attributes['buttonUrl']) ? $attributes['buttonUrl'] : $link;
+    $showBadge = isset($attributes['showBadge']) ? $attributes['showBadge'] : true;
+    $showButton = isset($attributes['showButton']) ? $attributes['showButton'] : true;
     
     ob_start();
     ?>
     <article class="project-card-block">
-        <a href="<?php echo esc_url($link); ?>">
-            <div class="project-image-wrapper">
-                <?php if ($image) : ?>
-                <img src="<?php echo esc_url($image); ?>" alt="">
-                <?php else : ?>
-                <img src="https://placehold.co/600x600/1a1a1a/1a1a1a.png" alt="">
+        <div class="project-image-wrapper">
+            <?php if ($image) : ?>
+            <img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($title); ?>">
+            <?php else : ?>
+            <img src="https://placehold.co/600x600/1a1a1a/1a1a1a.png" alt="">
+            <?php endif; ?>
+            <div class="project-overlay">
+                <?php if ($showBadge && $badge) : ?>
+                <span class="project-badge"><?php echo esc_html($badge); ?></span>
                 <?php endif; ?>
-                <div class="project-overlay">
-                    <span class="project-badge"><?php echo esc_html($badge); ?></span>
+                <div class="project-overlay-content">
+                    <?php if ($title) : ?>
                     <h3 class="project-title"><?php echo wp_kses_post(nl2br($title)); ?></h3>
+                    <?php endif; ?>
                 </div>
-            </div>
-            <div class="project-meta">
-                <?php if ($location) : ?>
-                <p class="project-location"><?php echo esc_html($location); ?></p>
-                <?php endif; ?>
-                <?php if ($author) : ?>
-                <p><?php echo esc_html($author); ?></p>
-                <?php endif; ?>
-                <?php if ($director) : ?>
-                <p><?php echo esc_html($director); ?></p>
+                <?php if ($showButton && $buttonText) : ?>
+                <div class="project-button-wrapper">
+                    <a href="<?php echo esc_url($buttonUrl); ?>" class="project-btn"><?php echo esc_html($buttonText); ?></a>
+                </div>
                 <?php endif; ?>
             </div>
-        </a>
+        </div>
+        <div class="project-meta">
+            <?php if ($location) : ?>
+            <p class="project-location"><?php echo esc_html($location); ?></p>
+            <?php endif; ?>
+            <?php if ($author) : ?>
+            <p class="project-author"><?php echo esc_html($author); ?></p>
+            <?php endif; ?>
+            <?php if ($director) : ?>
+            <p class="project-director"><?php echo esc_html($director); ?></p>
+            <?php endif; ?>
+        </div>
     </article>
     <?php
     return ob_get_clean();
