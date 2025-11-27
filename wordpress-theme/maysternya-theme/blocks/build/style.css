@@ -344,16 +344,10 @@
 }
 
 /* ==========================================
-   PROJECT CARD BLOCK
+   PROJECT CARD BLOCK - Pixel Perfect
    ========================================== */
 .project-card-block {
-    cursor: pointer;
-}
-
-.project-card-block a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+    position: relative;
 }
 
 .project-card-block .project-image-wrapper {
@@ -374,45 +368,166 @@
     transform: scale(1.03);
 }
 
+/* Overlay with gradient */
 .project-card-block .project-overlay {
     position: absolute;
     inset: 0;
     padding: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 40%, transparent 70%);
+    background: linear-gradient(
+        to top, 
+        rgba(0,0,0,0.85) 0%, 
+        rgba(0,0,0,0.4) 35%, 
+        rgba(0,0,0,0.15) 60%, 
+        transparent 100%
+    );
 }
 
+/* Badge at top left - italic style */
 .project-card-block .project-badge {
-    position: absolute;
-    top: 32px;
-    left: 32px;
-    font-size: 10px;
-    letter-spacing: 0.2em;
+    font-family: var(--font-body, 'Jost', sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
 }
 
-.project-card-block .project-title {
-    font-size: clamp(36px, 5vw, 56px);
-    line-height: 0.9;
+/* Content container for title */
+.project-card-block .project-overlay-content {
+    margin-top: auto;
 }
 
+/* Title */
+.project-card-block .project-title {
+    font-family: var(--font-heading, 'Kharkiv Tone', sans-serif);
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Button wrapper - centered on image */
+.project-card-block .project-button-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show button on hover (desktop) */
+@media (min-width: 768px) {
+    .project-card-block:hover .project-button-wrapper {
+        opacity: 1;
+    }
+}
+
+/* Always show button on mobile */
+@media (max-width: 767px) {
+    .project-card-block .project-button-wrapper {
+        opacity: 1;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 24px;
+        text-align: center;
+    }
+    
+    .project-card-block .project-overlay {
+        position: relative;
+        padding: 0;
+        background: none;
+        margin-top: 16px;
+    }
+    
+    .project-card-block .project-badge {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        z-index: 5;
+    }
+    
+    .project-card-block .project-title {
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        right: 24px;
+        z-index: 5;
+    }
+    
+    .project-card-block .project-overlay-content {
+        display: none;
+    }
+    
+    .project-card-block .project-image-wrapper::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to top, 
+            rgba(0,0,0,0.85) 0%, 
+            rgba(0,0,0,0.4) 35%, 
+            rgba(0,0,0,0.15) 60%, 
+            transparent 100%
+        );
+        pointer-events: none;
+    }
+}
+
+/* Button style */
+.project-card-block .project-btn {
+    display: inline-block;
+    padding: 18px 48px;
+    background: var(--color-text, #fff);
+    color: var(--color-bg, #000);
+    font-family: var(--font-body, 'Jost', sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-card-block .project-btn:hover {
+    background: transparent;
+    color: var(--color-text, #fff);
+    box-shadow: inset 0 0 0 1px var(--color-text, #fff);
+}
+
+/* Meta text BELOW image - right aligned */
 .project-card-block .project-meta {
     padding-top: 16px;
     text-align: right;
 }
 
 .project-card-block .project-meta p {
-    font-size: 12px;
-    line-height: 1.6;
+    font-family: var(--font-body, 'Jost', sans-serif);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5;
     margin: 0;
+    color: var(--color-text, #fff);
 }
 
-.project-card-block .project-location {
-    font-size: 14px !important;
+.project-card-block .project-meta .project-location {
+    font-size: 14px;
+    font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    font-style: normal;
+}
+
+.project-card-block .project-meta .project-author,
+.project-card-block .project-meta .project-director {
+    font-style: italic;
 }
 
 /* ==========================================
