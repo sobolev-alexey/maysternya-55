@@ -524,81 +524,130 @@
     // ==========================================
     registerBlockType('maysternya/project-card', {
         title: __('Project Card', 'maysternya'),
-        description: __('Square image with overlay text', 'maysternya'),
+        description: __('Square image with overlay text, badge, and hover button', 'maysternya'),
         icon: 'format-gallery',
         category: 'maysternya',
         attributes: {
-            title: { type: 'string', default: 'PROJECT\nTITLE' },
+            title: { type: 'string', default: '' },
             imageUrl: { type: 'string', default: '' },
             imageId: { type: 'number' },
             link: { type: 'string', default: '#' },
             badge: { type: 'string', default: 'MAYSTERNYA 55' },
+            showBadge: { type: 'boolean', default: true },
             location: { type: 'string', default: '' },
             author: { type: 'string', default: '' },
-            director: { type: 'string', default: '' }
+            director: { type: 'string', default: '' },
+            buttonText: { type: 'string', default: 'LEARN MORE' },
+            buttonUrl: { type: 'string', default: '' },
+            showButton: { type: 'boolean', default: true }
         },
         edit: function(props) {
             const { attributes, setAttributes } = props;
             return h(Fragment, {},
                 h(InspectorControls, {},
-                    h(PanelBody, { title: __('Card Settings', 'maysternya') },
-                        h(TextControl, {
-                            label: __('Badge Text', 'maysternya'),
-                            value: attributes.badge,
-                            onChange: (val) => setAttributes({ badge: val })
-                        }),
-                        h(TextControl, {
-                            label: __('Link URL', 'maysternya'),
-                            value: attributes.link,
-                            onChange: (val) => setAttributes({ link: val })
-                        }),
-                        h(TextControl, {
-                            label: __('Location', 'maysternya'),
-                            value: attributes.location,
-                            onChange: (val) => setAttributes({ location: val })
-                        }),
-                        h(TextControl, {
-                            label: __('Author', 'maysternya'),
-                            value: attributes.author,
-                            onChange: (val) => setAttributes({ author: val })
-                        }),
-                        h(TextControl, {
-                            label: __('Director', 'maysternya'),
-                            value: attributes.director,
-                            onChange: (val) => setAttributes({ director: val })
-                        })
-                    ),
-                    h(PanelBody, { title: __('Image', 'maysternya') },
+                    h(PanelBody, { title: __('Image', 'maysternya'), initialOpen: true },
                         h(MediaUploadCheck, {},
                             h(MediaUpload, {
                                 onSelect: (media) => setAttributes({ imageUrl: media.url, imageId: media.id }),
                                 allowedTypes: ['image'],
                                 value: attributes.imageId,
-                                render: ({ open }) => h(Button, { onClick: open, variant: 'secondary' },
+                                render: ({ open }) => h(Button, { onClick: open, variant: 'secondary', style: { marginBottom: '10px' } },
                                     attributes.imageUrl ? __('Replace Image', 'maysternya') : __('Select Image', 'maysternya')
                                 )
                             })
-                        )
-                    )
-                ),
-                h('div', { className: 'maysternya-block-preview project-card-preview' },
-                    h('div', { style: { position: 'relative', aspectRatio: '1', background: '#1a1a1a', overflow: 'hidden' } },
-                        attributes.imageUrl && h('img', { src: attributes.imageUrl, style: { width: '100%', height: '100%', objectFit: 'cover' } }),
-                        h('div', { style: { position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%)', padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' } },
-                            h('span', { style: { fontSize: '10px', letterSpacing: '0.2em' } }, attributes.badge),
-                            h(RichText, {
-                                tagName: 'h3',
-                                value: attributes.title,
-                                onChange: (val) => setAttributes({ title: val }),
-                                placeholder: __('Project Title', 'maysternya'),
-                                style: { fontSize: '36px', lineHeight: '0.9' }
+                        ),
+                        attributes.imageUrl && h(Button, { 
+                            onClick: () => setAttributes({ imageUrl: '', imageId: null }),
+                            variant: 'link',
+                            isDestructive: true
+                        }, __('Remove Image', 'maysternya'))
+                    ),
+                    h(PanelBody, { title: __('Badge', 'maysternya') },
+                        h(ToggleControl, {
+                            label: __('Show Badge', 'maysternya'),
+                            checked: attributes.showBadge,
+                            onChange: (val) => setAttributes({ showBadge: val })
+                        }),
+                        attributes.showBadge && h(TextControl, {
+                            label: __('Badge Text', 'maysternya'),
+                            value: attributes.badge,
+                            onChange: (val) => setAttributes({ badge: val }),
+                            placeholder: 'MAYSTERNYA 55'
+                        })
+                    ),
+                    h(PanelBody, { title: __('Meta Info (Below Image)', 'maysternya') },
+                        h(TextControl, {
+                            label: __('Location', 'maysternya'),
+                            value: attributes.location,
+                            onChange: (val) => setAttributes({ location: val }),
+                            placeholder: 'e.g., FARA-IN-SABINA'
+                        }),
+                        h(TextControl, {
+                            label: __('Author', 'maysternya'),
+                            value: attributes.author,
+                            onChange: (val) => setAttributes({ author: val }),
+                            placeholder: 'e.g., J.Soyref'
+                        }),
+                        h(TextControl, {
+                            label: __('Director', 'maysternya'),
+                            value: attributes.director,
+                            onChange: (val) => setAttributes({ director: val }),
+                            placeholder: 'e.g., Director: Leonid Sadovsky'
+                        })
+                    ),
+                    h(PanelBody, { title: __('Button', 'maysternya') },
+                        h(ToggleControl, {
+                            label: __('Show Button', 'maysternya'),
+                            checked: attributes.showButton,
+                            onChange: (val) => setAttributes({ showButton: val })
+                        }),
+                        attributes.showButton && h(Fragment, {},
+                            h(TextControl, {
+                                label: __('Button Text', 'maysternya'),
+                                value: attributes.buttonText,
+                                onChange: (val) => setAttributes({ buttonText: val }),
+                                placeholder: 'LEARN MORE'
+                            }),
+                            h(TextControl, {
+                                label: __('Button URL', 'maysternya'),
+                                value: attributes.buttonUrl,
+                                onChange: (val) => setAttributes({ buttonUrl: val }),
+                                placeholder: 'https://...'
                             })
                         )
                     ),
-                    h('div', { style: { textAlign: 'right', marginTop: '10px', fontSize: '12px' } },
-                        attributes.location && h('p', {}, attributes.location),
-                        attributes.author && h('p', {}, attributes.author),
-                        attributes.director && h('p', {}, attributes.director)
+                    h(PanelBody, { title: __('Card Link (Fallback)', 'maysternya') },
+                        h(TextControl, {
+                            label: __('Link URL', 'maysternya'),
+                            value: attributes.link,
+                            onChange: (val) => setAttributes({ link: val }),
+                            help: __('Used if button URL is empty', 'maysternya')
+                        })
+                    )
+                ),
+                h('div', { className: 'maysternya-block-preview project-card-preview' },
+                    h('div', { className: 'project-card-editor', style: { position: 'relative', aspectRatio: '1', background: '#1a1a1a', overflow: 'hidden' } },
+                        attributes.imageUrl && h('img', { src: attributes.imageUrl, style: { width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 } }),
+                        h('div', { style: { position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.1) 70%, transparent 100%)', padding: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' } },
+                            attributes.showBadge && attributes.badge && h('span', { style: { fontSize: '10px', letterSpacing: '0.2em', fontStyle: 'italic' } }, attributes.badge),
+                            h('div', { style: { marginTop: 'auto' } },
+                                h(RichText, {
+                                    tagName: 'h3',
+                                    value: attributes.title,
+                                    onChange: (val) => setAttributes({ title: val }),
+                                    placeholder: __('PROJECT TITLE', 'maysternya'),
+                                    style: { fontSize: '42px', lineHeight: '0.95', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }
+                                })
+                            ),
+                            attributes.showButton && attributes.buttonText && h('div', { style: { position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', opacity: 0.9 } },
+                                h('span', { style: { display: 'inline-block', padding: '16px 40px', background: '#fff', color: '#000', fontSize: '12px', letterSpacing: '0.15em', fontWeight: '500' } }, attributes.buttonText)
+                            )
+                        )
+                    ),
+                    h('div', { style: { textAlign: 'right', marginTop: '16px', fontSize: '12px', lineHeight: '1.6' } },
+                        attributes.location && h('p', { style: { margin: 0, fontSize: '14px', letterSpacing: '0.1em', textTransform: 'uppercase' } }, attributes.location),
+                        attributes.author && h('p', { style: { margin: 0, fontStyle: 'italic' } }, attributes.author),
+                        attributes.director && h('p', { style: { margin: 0, fontStyle: 'italic' } }, attributes.director)
                     )
                 )
             );
