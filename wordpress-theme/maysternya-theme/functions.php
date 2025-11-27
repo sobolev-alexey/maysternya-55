@@ -194,6 +194,11 @@ require_once MAYSTERNYA_DIR . '/inc/custom-post-types.php';
 require_once MAYSTERNYA_DIR . '/inc/template-tags.php';
 
 /**
+ * Include custom Gutenberg blocks
+ */
+require_once MAYSTERNYA_DIR . '/inc/blocks.php';
+
+/**
  * Add body classes
  */
 function maysternya_body_classes($classes) {
