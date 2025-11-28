@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+    <title>Maysternya 55</title>
+    <link>https://maysternya55.com</link>
+    <description>Independent Ukrainian Theatre</description>
+    <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://maysternya55.com</wp:base_site_url>
+    <wp:base_blog_url>https://maysternya55.com</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[maysternya55@gmail.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Maysternya 55]]></wp:author_display_name>
+    </wp:author>
+
+    <!-- SAMPLE PERFORMANCE PAGE (Individual Production) -->
+    <item>
+        <title>Three Sisters</title>
+        <link>https://maysternya55.com/performances/three-sisters/</link>
+        <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://maysternya55.com/?page_id=22</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+<!-- wp:maysternya/banner {"title":"THREE\nSISTERS","subtitle":"A PRODUCTION BY MAYSTERNYA 55","titleTag":"h1","showCta":true,"ctaText":"BOOK TICKETS","ctaUrl":"/tickets/three-sisters","ctaStyle":"filled","height":"full","contentAlignment":"left","hasBackgroundImage":true} /-->
+
+<!-- wp:maysternya/headline-subline {"pretitle":"PERFORMANCES","headline":"THREE\nSISTERS","headlineTag":"h1","alignment":"left","size":"large"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>By Anton Chekhov</strong>\n<strong>Directed by Leonid Sadovsky</strong>\n<strong>Premiere: October 2017</strong>\n<strong>Duration: 2h 45min (with intermission)</strong>","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"ABOUT THE PRODUCTION","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"Our interpretation of Chekhov's masterpiece strips away the trappings of period drama to reveal the timeless human longing at its core. Three sisters — Olga, Masha, and Irina — dream of escaping their provincial existence for the promise of Moscow, but find themselves trapped in a web of unfulfilled desires, failed relationships, and the relentless passage of time.\n\nThis production has been hailed as one of the most innovative Chekhov interpretations to emerge from Ukrainian theater in recent decades. The minimalist staging and powerful ensemble work create an intimate experience that draws audiences into the sisters' emotional landscape.","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/full-width-image {"hasCaption":true,"caption":"Scene from Act III - The fire sequence"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"CAST","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>Olga</strong> — Olena Petrenko\n<strong>Masha</strong> — Viktoria Sydorenko\n<strong>Irina</strong> — Kateryna Bondar\n<strong>Andrei</strong> — Dmytro Kovalenko\n<strong>Natasha</strong> — Maria Shevchenko\n<strong>Vershinin</strong> — Oleksandr Melnyk\n<strong>Kulygin</strong> — Ivan Tkachenko\n<strong>Tuzenbach</strong> — Mykola Pavlov\n<strong>Solyony</strong> — Sergiy Ivanov\n<strong>Chebutykin</strong> — Vasyl Rudenko","columns":2,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"CREATIVE TEAM","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>Director</strong> — Leonid Sadovsky\n<strong>Set Design</strong> — Anna Marchenko\n<strong>Costume Design</strong> — Olga Filipova\n<strong>Lighting Design</strong> — Viktor Petrov\n<strong>Sound Design</strong> — Artem Savchenko\n<strong>Assistant Director</strong> — Yulia Kravchenko","columns":2,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"GALLERY","alignment":"center"} /-->
+
+<!-- wp:maysternya/image-grid {"gap":"medium"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"REVIEWS","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"\"A revelation. Sadovsky's Three Sisters strips Chekhov to his emotional essence, creating theater of devastating intimacy and power.\"\n— <em>Kyiv Post</em>\n\n\"The MAYSTERNYA 55 ensemble achieves something remarkable: making Chekhov feel urgent, immediate, and vital for contemporary audiences.\"\n— <em>Theatre Review Ukraine</em>\n\n\"Unforgettable. The final scene will stay with you long after you leave the theater.\"\n— <em>Kharkiv Cultural Review</em>","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"TOUR HISTORY","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>2017</strong> — Premiere, Kharkiv\n<strong>2018</strong> — Kyiv International Theater Festival\n<strong>2018</strong> — FLIPT Festival, Rome, Italy\n<strong>2019</strong> — Zukunft/st, Berlin, Germany\n<strong>2019</strong> — National Tour (Lviv, Odesa, Dnipro)\n<strong>2022</strong> — Revival, Kyiv","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"UPCOMING PERFORMANCES","alignment":"center"} /-->
+
+<!-- wp:maysternya/event-card {"title":"THREE SISTERS","date":"DECEMBER 15, 2024","location":"KYIV, UKRAINE","time":"19:00","description":"Kyiv National Theater • Limited seating","showCta":true,"ctaText":"BOOK NOW","ctaUrl":"/tickets/three-sisters-dec15"} /-->
+
+<!-- wp:maysternya/event-card {"title":"THREE SISTERS","date":"DECEMBER 16, 2024","location":"KYIV, UKRAINE","time":"15:00","description":"Kyiv National Theater • Matinee performance","showCta":true,"ctaText":"BOOK NOW","ctaUrl":"/tickets/three-sisters-dec16"} /-->
+
+<!-- wp:maysternya/banner {"title":"BOOK\nYOUR\nTICKETS","subtitle":"Experience Chekhov as you've never seen him before","titleTag":"h2","showCta":true,"ctaText":"RESERVE SEATS","ctaUrl":"/tickets/three-sisters","ctaStyle":"outline","height":"short","contentAlignment":"center"} /-->
+]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>22</wp:post_id>
+        <wp:post_date><![CDATA[2024-11-28 00:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_date_gmt>
+        <wp:post_modified><![CDATA[2024-11-28 00:00:00]]></wp:post_modified>
+        <wp:post_modified_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_modified_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[three-sisters]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[performance]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+</channel>
+</rss>

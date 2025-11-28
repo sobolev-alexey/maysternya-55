@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+    <title>Maysternya 55</title>
+    <link>https://maysternya55.com</link>
+    <description>Independent Ukrainian Theatre</description>
+    <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://maysternya55.com</wp:base_site_url>
+    <wp:base_blog_url>https://maysternya55.com</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[maysternya55@gmail.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Maysternya 55]]></wp:author_display_name>
+    </wp:author>
+
+    <!-- SAMPLE TEAM MEMBER PAGE -->
+    <item>
+        <title>Leonid Sadovsky</title>
+        <link>https://maysternya55.com/team/leonid-sadovsky/</link>
+        <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://maysternya55.com/?page_id=23</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+<!-- wp:maysternya/headline-subline {"pretitle":"TEAM","headline":"LEONID\nSADOVSKY","headlineTag":"h1","alignment":"left","size":"large"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>Founder & Artistic Director</strong>","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/text-image {"title":"BIOGRAPHY","content":"Leonid Sadovsky is a Ukrainian theater director, teacher, and the founder of MAYSTERNYA 55. Born in Kharkiv in 1965, he graduated from the Kharkiv National University of Arts with a degree in Theater Directing in 1989.\n\nAfter working in various state theaters across Ukraine, Sadovsky founded MAYSTERNYA 55 in 2006 as an independent theater studio dedicated to creating authentic, emotionally powerful performance work. His vision combined the psychological depth of the Stanislavski tradition with physical theater techniques drawn from European masters.\n\nUnder his leadership, MAYSTERNYA 55 has grown from a small studio into one of Ukraine's most respected independent theater companies, with productions touring internationally and educational programs reaching hundreds of young artists.","imagePosition":"right"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"ARTISTIC PHILOSOPHY","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"\"Theater is not entertainment — it is a laboratory for the human soul. In our work, we seek not to distract audiences from their lives, but to deepen their experience of living. Every production is an experiment in truth, an attempt to strip away the false layers and reveal something essential about who we are.\"\n\n— Leonid Sadovsky","columns":1,"width":"full","alignment":"center"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"SELECTED DIRECTING CREDITS","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>2024</strong> — Hamlet\n<strong>2023</strong> — Five Minutes to Zero (Original Devised Work)\n<strong>2022</strong> — Cherry Orchard Revisited\n<strong>2019</strong> — Jesus Christ Superstar (International Co-Production)\n<strong>2017</strong> — Three Sisters\n<strong>2016</strong> — The Seagull\n<strong>2015</strong> — Antigone\n<strong>2014</strong> — The Tempest\n<strong>2013</strong> — Woyzeck\n<strong>2012</strong> — Medea\n<strong>2011</strong> — Uncle Vanya\n<strong>2010</strong> — The Cherry Orchard\n<strong>2008</strong> — Waiting for Godot\n<strong>2007</strong> — The Seagull (First Production)","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"AWARDS & RECOGNITION","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"• Golden Sofia Award for Best Direction, Kyiv Theater Festival (2019)\n• Honored Artist of Ukraine (2018)\n• FLIPT Festival Prize for International Collaboration (2017)\n• Kharkiv Regional Theater Award (2014, 2016, 2017)\n• Best Production, National Theater Competition (2012)","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"TEACHING & PEDAGOGY","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"Sadovsky is a dedicated teacher who has mentored generations of Ukrainian theater artists. He founded the Summer Theatre Academy in 2015 and continues to lead master classes and workshops internationally.\n\nHis pedagogical approach emphasizes ensemble work, physical expressiveness, and deep emotional authenticity. He has taught at numerous institutions including:\n\n• Kharkiv National University of Arts\n• National Theatre School of Ukraine (Kyiv)\n• Fabbrica dell'Attore (Rome, Italy)\n• Theater neben dem Turm (Marburg, Germany)\n• PACT Zollverein (Essen, Germany)","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/image-grid {"gap":"medium"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"GALLERY","alignment":"center"} /-->
+
+<!-- wp:maysternya/small-image-grid {"columns":4,"gap":"small"} /-->
+
+<!-- wp:maysternya/banner {"title":"MEET THE\nFULL TEAM","titleTag":"h2","showCta":true,"ctaText":"VIEW ALL MEMBERS","ctaUrl":"/team","ctaStyle":"outline","height":"short","contentAlignment":"center"} /-->
+]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>23</wp:post_id>
+        <wp:post_date><![CDATA[2024-11-28 00:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_date_gmt>
+        <wp:post_modified><![CDATA[2024-11-28 00:00:00]]></wp:post_modified>
+        <wp:post_modified_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_modified_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[leonid-sadovsky]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[team_member]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+    </item>
+
+</channel>
+</rss>

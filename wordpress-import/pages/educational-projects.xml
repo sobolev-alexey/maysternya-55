@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+    <title>Maysternya 55</title>
+    <link>https://maysternya55.com</link>
+    <description>Independent Ukrainian Theatre</description>
+    <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://maysternya55.com</wp:base_site_url>
+    <wp:base_blog_url>https://maysternya55.com</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[maysternya55@gmail.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Maysternya 55]]></wp:author_display_name>
+    </wp:author>
+
+    <!-- EDUCATIONAL PROJECTS PAGE 1 - Summer Theatre Academy -->
+    <item>
+        <title>Summer Theatre Academy</title>
+        <link>https://maysternya55.com/educational-projects/summer-theatre-academy/</link>
+        <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://maysternya55.com/?page_id=17</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+<!-- wp:maysternya/headline-subline {"pretitle":"MAIN PAGE/EDUCATIONAL PROJECTS","headline":"SUMMER\nTHEATRE\nACADEMY","headlineTag":"h1","alignment":"left","size":"large"} /-->
+
+<!-- wp:maysternya/educational-project-card {"title":"INTENSIVE TRAINING","subtitle":"4 WEEKS OF IMMERSIVE THEATER EDUCATION","year":"2024","showCta":true,"ctaText":"APPLY NOW","ctaUrl":"/apply/summer-academy"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"ABOUT THE PROGRAM","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"The Summer Theatre Academy is our flagship educational program, bringing together emerging theater artists from Ukraine and abroad for an intensive month of training, collaboration, and artistic exploration.\n\nFounded in 2015, the Academy has trained over 200 young artists from 15 countries, creating a vibrant international community of theater practitioners united by their passion for authentic performance.","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/text-image {"title":"CURRICULUM","content":"Our comprehensive curriculum combines:\n\n• Physical theater and movement training\n• Voice and speech work\n• Improvisation and ensemble building\n• Text analysis and character development\n• Directing fundamentals\n• Stage combat and choreography\n\nAll training is led by experienced practitioners from MAYSTERNYA 55 and guest instructors from our international partner organizations.","imagePosition":"right"} /-->
+
+<!-- wp:maysternya/image-grid {"gap":"medium"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"DAILY SCHEDULE","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>9:00 - 11:00</strong> Physical Training\n<strong>11:30 - 13:30</strong> Voice and Speech\n<strong>15:00 - 17:00</strong> Scene Work / Rehearsals\n<strong>17:30 - 19:30</strong> Specialized Workshops\n<strong>20:00</strong> Evening Events (Performances, Discussions, Screenings)","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"2025 EDITION","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>Dates:</strong> July 1 - July 28, 2025\n<strong>Location:</strong> MAYSTERNYA 55 Studio, Kharkiv (or alternative location TBA)\n<strong>Language:</strong> English and Ukrainian\n<strong>Fee:</strong> €800 (scholarships available)\n<strong>Application Deadline:</strong> May 15, 2025","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"REQUIREMENTS","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"• Age 18-35\n• Previous theater training or experience\n• Intermediate English proficiency\n• Full availability for the program duration\n• Willingness to work in an ensemble-based environment","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/banner {"title":"JOIN THE\nACADEMY\n2025","subtitle":"Applications open January 15, 2025","titleTag":"h2","showCta":true,"ctaText":"APPLY NOW","ctaUrl":"/apply/summer-academy","ctaStyle":"outline","height":"short","contentAlignment":"center"} /-->
+]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>17</wp:post_id>
+        <wp:post_date><![CDATA[2024-11-28 00:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_date_gmt>
+        <wp:post_modified><![CDATA[2024-11-28 00:00:00]]></wp:post_modified>
+        <wp:post_modified_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_modified_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[summer-theatre-academy]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+            <wp:meta_value><![CDATA[page-educational-projects.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- EDUCATIONAL PROJECTS PAGE 2 - Workshop Series -->
+    <item>
+        <title>Workshop Series</title>
+        <link>https://maysternya55.com/educational-projects/workshop-series/</link>
+        <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://maysternya55.com/?page_id=18</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+<!-- wp:maysternya/headline-subline {"pretitle":"MAIN PAGE/EDUCATIONAL PROJECTS","headline":"WORKSHOP\nSERIES","headlineTag":"h1","alignment":"left","size":"large"} /-->
+
+<!-- wp:maysternya/educational-project-card {"title":"YEAR-ROUND LEARNING","subtitle":"ONGOING WORKSHOPS FOR ALL LEVELS","year":"2024-2025","showCta":true,"ctaText":"VIEW SCHEDULE","ctaUrl":"/workshops/schedule"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"PROGRAM OVERVIEW","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"Our Workshop Series offers accessible, flexible learning opportunities for actors, directors, and theater enthusiasts at all levels of experience. From weekend intensives to ongoing weekly classes, we provide pathways for continuous artistic growth.","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"CURRENT OFFERINGS","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-image {"title":"ACTING FUNDAMENTALS","content":"A 12-week introduction to ensemble-based acting techniques. This course covers the foundations of physical theater, improvisation, and text work using the methodologies developed by MAYSTERNYA 55.\n\n<strong>When:</strong> Tuesdays & Thursdays, 18:00-21:00\n<strong>Duration:</strong> 12 weeks\n<strong>Fee:</strong> €200","imagePosition":"right"} /-->
+
+<!-- wp:maysternya/text-image {"title":"ADVANCED SCENE STUDY","content":"For actors with previous training, this intensive workshop focuses on deep character exploration and scene work. Participants work on classical and contemporary texts under the guidance of senior company members.\n\n<strong>When:</strong> Saturdays, 10:00-17:00\n<strong>Duration:</strong> 8 weeks\n<strong>Fee:</strong> €250","imagePosition":"left"} /-->
+
+<!-- wp:maysternya/text-image {"title":"PHYSICAL THEATER INTENSIVE","content":"A weekend workshop exploring the body as the primary instrument of expression. Combining elements of mime, dance, and acrobatics, participants discover new possibilities for physical storytelling.\n\n<strong>When:</strong> Monthly weekend intensives\n<strong>Duration:</strong> 2 days\n<strong>Fee:</strong> €80","imagePosition":"right"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"MASTER CLASSES","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"Throughout the year, we host guest artists from our international network for special master classes. These unique learning opportunities provide exposure to diverse approaches and techniques from leading practitioners worldwide.\n\nPast guest instructors have included artists from:\n• Fabbrica dell'Attore (Italy)\n• Theater neben dem Turm (Germany)\n• National Theatre School of Ukraine\n• PACT Zollverein (Germany)","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/small-image-grid {"columns":4,"gap":"small"} /-->
+
+<!-- wp:maysternya/banner {"title":"FIND YOUR\nWORKSHOP","titleTag":"h2","showCta":true,"ctaText":"VIEW ALL WORKSHOPS","ctaUrl":"/workshops","ctaStyle":"outline","height":"short","contentAlignment":"center"} /-->
+]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>18</wp:post_id>
+        <wp:post_date><![CDATA[2024-11-28 00:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_date_gmt>
+        <wp:post_modified><![CDATA[2024-11-28 00:00:00]]></wp:post_modified>
+        <wp:post_modified_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_modified_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[workshop-series]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+            <wp:meta_value><![CDATA[page-educational-projects.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- EDUCATIONAL PROJECTS PAGE 3 - Youth Program -->
+    <item>
+        <title>Youth Program</title>
+        <link>https://maysternya55.com/educational-projects/youth-program/</link>
+        <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://maysternya55.com/?page_id=19</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+<!-- wp:maysternya/headline-subline {"pretitle":"MAIN PAGE/EDUCATIONAL PROJECTS","headline":"YOUTH\nPROGRAM","headlineTag":"h1","alignment":"left","size":"large"} /-->
+
+<!-- wp:maysternya/educational-project-card {"title":"THEATER FOR YOUNG PEOPLE","subtitle":"CREATIVE DEVELOPMENT AGES 10-17","year":"2024-2025","showCta":true,"ctaText":"ENROLL NOW","ctaUrl":"/youth/enroll"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"PROGRAM MISSION","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"The MAYSTERNYA 55 Youth Program introduces young people to the transformative power of theater. Through play, collaboration, and creative expression, participants develop confidence, empathy, and communication skills that serve them in all areas of life.","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/text-image {"title":"JUNIOR ENSEMBLE (Ages 10-13)","content":"Our Junior Ensemble focuses on foundational theater skills through games, improvisation, and ensemble exercises. Young actors explore storytelling, character creation, and basic stage techniques in a supportive, playful environment.\n\n<strong>When:</strong> Saturdays, 10:00-12:00\n<strong>Duration:</strong> School year (September-May)\n<strong>Fee:</strong> €15/month","imagePosition":"right"} /-->
+
+<!-- wp:maysternya/text-image {"title":"TEEN COMPANY (Ages 14-17)","content":"The Teen Company offers more intensive training for young people serious about theater. Participants work on full productions, learn advanced techniques, and have opportunities to assist with MAYSTERNYA 55 performances.\n\n<strong>When:</strong> Saturdays, 14:00-18:00\n<strong>Duration:</strong> School year (September-May)\n<strong>Fee:</strong> €25/month","imagePosition":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"ANNUAL SHOWCASE","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"Each year, our youth programs culminate in public performances where young actors share their work with family, friends, and the community. These showcases celebrate the growth and achievements of our young artists.\n\n<strong>Junior Ensemble Showcase:</strong> December & May\n<strong>Teen Company Production:</strong> May/June","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/image-grid {"gap":"medium"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"SUMMER PROGRAMS","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"During summer breaks, we offer special intensive camps for young people:\n\n<strong>Theater Adventure Camp (Ages 8-12)</strong>\nA two-week day camp filled with theater games, crafts, and performance.\nJuly 1-12 & July 15-26\n\n<strong>Teen Intensive (Ages 14-17)</strong>\nA one-week residential program focused on ensemble creation.\nAugust 5-11","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/banner {"title":"NURTURING\nYOUNG\nARTISTS","subtitle":"Registration for 2024-25 school year now open","titleTag":"h2","showCta":true,"ctaText":"REGISTER TODAY","ctaUrl":"/youth/register","ctaStyle":"outline","height":"short","contentAlignment":"center"} /-->
+]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>19</wp:post_id>
+        <wp:post_date><![CDATA[2024-11-28 00:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_date_gmt>
+        <wp:post_modified><![CDATA[2024-11-28 00:00:00]]></wp:post_modified>
+        <wp:post_modified_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_modified_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[youth-program]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+            <wp:meta_value><![CDATA[page-educational-projects.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+</channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+    <title>Maysternya 55</title>
+    <link>https://maysternya55.com</link>
+    <description>Independent Ukrainian Theatre</description>
+    <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://maysternya55.com</wp:base_site_url>
+    <wp:base_blog_url>https://maysternya55.com</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[maysternya55@gmail.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Maysternya 55]]></wp:author_display_name>
+    </wp:author>
+
+    <!-- CONTACT US PAGE -->
+    <item>
+        <title>Contacts</title>
+        <link>https://maysternya55.com/contacts/</link>
+        <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://maysternya55.com/?page_id=15</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+<!-- wp:maysternya/headline-subline {"pretitle":"MAIN PAGE","headline":"CONTACT\nUS","headlineTag":"h1","alignment":"left","size":"large"} /-->
+
+<!-- wp:maysternya/text-block {"content":"We would love to hear from you. Whether you have questions about our performances, want to collaborate, or wish to support our work, please reach out through any of the channels below.","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"GET IN TOUCH","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>Email</strong>\nmaysternya55@gmail.com\n\n<strong>Phone</strong>\n+380 57 123 4567\n\n<strong>Address</strong>\nKharkiv, Ukraine\nVulytsia Sumska, 55","columns":2,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"FOLLOW US","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"Stay connected with MAYSTERNYA 55 through our social media channels for the latest news, behind-the-scenes content, and announcements.","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/small-image-grid {"columns":4,"gap":"medium"} /-->
+
+<!-- wp:maysternya/text-block {"content":"<strong>Instagram</strong>\n@maysternya55\n\n<strong>Facebook</strong>\nfacebook.com/maysternya55\n\n<strong>YouTube</strong>\nyoutube.com/@maysternya55\n\n<strong>Telegram</strong>\nt.me/maysternya55","columns":2,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"PRESS INQUIRIES","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"For media and press inquiries, please contact our press office:\n\npress@maysternya55.com\n\nWe are happy to provide press materials, arrange interviews, and facilitate media access to our productions.","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"COLLABORATION","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"MAYSTERNYA 55 is always open to creative partnerships and collaborations. If you represent a theater company, festival, or cultural organization and are interested in working together, please reach out with your proposal.\n\nWe are particularly interested in:\n• International co-productions\n• Festival participation\n• Educational exchanges\n• Residency programs","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/banner {"title":"JOIN OUR\nCOMMUNITY","subtitle":"Subscribe to our newsletter for updates on performances and events","titleTag":"h2","showCta":true,"ctaText":"SUBSCRIBE","ctaUrl":"/subscribe","ctaStyle":"outline","height":"short","contentAlignment":"center"} /-->
+]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>15</wp:post_id>
+        <wp:post_date><![CDATA[2024-11-28 00:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_date_gmt>
+        <wp:post_modified><![CDATA[2024-11-28 00:00:00]]></wp:post_modified>
+        <wp:post_modified_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_modified_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[contacts]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+            <wp:meta_value><![CDATA[page-contacts.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+</channel>
+</rss>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+    <title>Maysternya 55</title>
+    <link>https://maysternya55.com</link>
+    <description>Independent Ukrainian Theatre</description>
+    <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://maysternya55.com</wp:base_site_url>
+    <wp:base_blog_url>https://maysternya55.com</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[maysternya55@gmail.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Maysternya 55]]></wp:author_display_name>
+    </wp:author>
+
+    <!-- INTERNATIONAL PROJECTS PAGE (Productions sub-page) -->
+    <item>
+        <title>International Projects</title>
+        <link>https://maysternya55.com/international-projects/</link>
+        <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://maysternya55.com/?page_id=14</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+<!-- wp:maysternya/headline-subline {"pretitle":"MAIN PAGE/PRODUCTIONS","headline":"INTERNATIONAL\nPROJECTS","headlineTag":"h1","alignment":"left","size":"large"} /-->
+
+<!-- wp:maysternya/text-block {"content":"MAYSTERNYA 55 has established strong partnerships with theater companies and cultural organizations across Europe. Our international projects bring together artists from different backgrounds, creating unique theatrical experiences that transcend borders and languages.","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"PARTNER ORGANIZATIONS","alignment":"center"} /-->
+
+<!-- wp:maysternya/project-card {"title":"FLIPT\nFESTIVAL","subtitle":"FABBRICA DELL'ATTORE\nROMA, ITALIA","year":"2015-2024","showCta":true,"ctaText":"LEARN MORE","ctaUrl":"/projects/flipt"} /-->
+
+<!-- wp:maysternya/project-card {"title":"ZUKUNFT/ST\nBERLIN","subtitle":"THEATER NEBEN DEM TURM\nGERMANY","year":"2018-2024","showCta":true,"ctaText":"LEARN MORE","ctaUrl":"/projects/zukunftst"} /-->
+
+<!-- wp:maysternya/project-card {"title":"PACT\nZOLLVEREIN","subtitle":"INTERNATIONAL ARTS CAMPUS\nESSEN, GERMANY","year":"2019-2022","showCta":true,"ctaText":"LEARN MORE","ctaUrl":"/projects/pact"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"FEATURED PRODUCTIONS","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-image {"title":"JESUS CHRIST SUPERSTAR","subtitle":"International Co-Production","content":"A groundbreaking collaboration between MAYSTERNYA 55 and Italian partners, this production of the legendary rock opera has toured across Europe since 2019. Featuring a multinational cast and crew, the production explores themes of faith, doubt, and redemption through a contemporary lens.\n\nThe production premiered at FLIPT Festival in Rome and has since been performed in Germany, Poland, and Ukraine, reaching audiences of over 50,000 people.","imagePosition":"right","showCta":true,"ctaText":"WATCH TRAILER","ctaUrl":"/performances/jesus-christ-superstar"} /-->
+
+<!-- wp:maysternya/image-grid {"gap":"medium"} /-->
+
+<!-- wp:maysternya/text-image {"title":"THREE SISTERS","subtitle":"European Tour","content":"Our interpretation of Chekhov's masterpiece has become a signature production for international festivals. The minimalist staging and powerful ensemble work have earned critical acclaim across Europe.\n\nThe production explores themes of longing, unfulfilled dreams, and the passage of time, resonating with audiences regardless of cultural background.","imagePosition":"left","showCta":true,"ctaText":"READ REVIEWS","ctaUrl":"/performances/three-sisters"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"EXCHANGE PROGRAMS","alignment":"center"} /-->
+
+<!-- wp:maysternya/text-block {"content":"Beyond performances, MAYSTERNYA 55 facilitates artistic exchanges that foster international collaboration and cultural understanding. Our exchange programs include:","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/small-image-grid {"columns":3,"gap":"medium"} /-->
+
+<!-- wp:maysternya/text-block {"content":"• Artist Residencies: International artists come to Kharkiv to train and create with our ensemble\n• Educational Exchanges: Our actors and directors participate in master classes abroad\n• Joint Productions: Collaborative creations with international partners\n• Festival Participation: Representation at major European theater festivals","columns":1,"width":"full","alignment":"left"} /-->
+
+<!-- wp:maysternya/section-separator {"title":"UPCOMING INTERNATIONAL EVENTS","alignment":"center"} /-->
+
+<!-- wp:maysternya/event-card {"title":"FLIPT FESTIVAL 2025","date":"JULY 15-25, 2025","location":"ROME, ITALY","description":"Our ensemble will present two new productions at the 20th anniversary edition of FLIPT Festival.","showCta":true,"ctaText":"MORE INFO","ctaUrl":"/events/flipt-2025"} /-->
+
+<!-- wp:maysternya/event-card {"title":"ZUKUNFT/ST BERLIN","date":"SEPTEMBER 5-12, 2025","location":"BERLIN, GERMANY","description":"Workshop series and performance exchange with German theater students.","showCta":true,"ctaText":"REGISTER","ctaUrl":"/events/zukunftst-2025"} /-->
+
+<!-- wp:maysternya/banner {"title":"BECOME A\nPARTNER","subtitle":"Join our international network of collaborating theaters and organizations","titleTag":"h2","showCta":true,"ctaText":"CONTACT US","ctaUrl":"/contacts","ctaStyle":"outline","height":"short","contentAlignment":"center"} /-->
+]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>14</wp:post_id>
+        <wp:post_date><![CDATA[2024-11-28 00:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_date_gmt>
+        <wp:post_modified><![CDATA[2024-11-28 00:00:00]]></wp:post_modified>
+        <wp:post_modified_gmt><![CDATA[2024-11-28 00:00:00]]></wp:post_modified_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[international-projects]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type><![CDATA[page]]></wp:post_type>
+        <wp:post_password><![CDATA[]]></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+            <wp:meta_value><![CDATA[page-international-projects.php]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+</channel>
+</rss>

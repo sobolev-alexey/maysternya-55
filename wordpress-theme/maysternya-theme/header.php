@@ -65,19 +65,22 @@
                 </a>
             </div>
             
-            <!-- Language Selector with German and Ukrainian -->
+            <!-- Language Selector - UK flag default, only flags shown -->
             <div class="lang-selector">
-                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-de.svg" alt="Deutsch" class="current-flag">
-                <span class="arrow">▾</span>
+                <button class="lang-current" aria-label="Select Language">
+                    <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-uk.svg" alt="English" class="current-flag">
+                    <span class="arrow">▾</span>
+                </button>
                 <div class="lang-dropdown">
-                    <div class="lang-option">
-                        <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-de.svg" alt="">
-                        <span>Deutsch</span>
-                    </div>
-                    <div class="lang-option">
-                        <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-ua.svg" alt="">
-                        <span>Українська</span>
-                    </div>
+                    <a href="?lang=en" class="lang-option active">
+                        <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-uk.svg" alt="English">
+                    </a>
+                    <a href="?lang=de" class="lang-option">
+                        <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-de.svg" alt="Deutsch">
+                    </a>
+                    <a href="?lang=ua" class="lang-option">
+                        <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-ua.svg" alt="Українська">
+                    </a>
                 </div>
             </div>
         </div>
@@ -124,17 +127,18 @@
         </ul>
     </nav>
     
-    <!-- Mobile Language Selector -->
+    <!-- Mobile Language Selector - flags only -->
     <div class="mobile-lang-selector">
         <div class="mobile-lang-options">
-            <div class="mobile-lang-option">
-                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-de.svg" alt="">
-                <span>DE</span>
-            </div>
-            <div class="mobile-lang-option">
-                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-ua.svg" alt="">
-                <span>UA</span>
-            </div>
+            <a href="?lang=en" class="mobile-lang-option active">
+                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-uk.svg" alt="English">
+            </a>
+            <a href="?lang=de" class="mobile-lang-option">
+                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-de.svg" alt="Deutsch">
+            </a>
+            <a href="?lang=ua" class="mobile-lang-option">
+                <img src="<?php echo MAYSTERNYA_URI; ?>/images/flag-ua.svg" alt="Українська">
+            </a>
         </div>
     </div>
 </div>
