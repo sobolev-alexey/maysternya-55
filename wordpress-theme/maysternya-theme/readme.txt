@@ -1,34 +1,75 @@
 Theme: Maysternya 55 Theatre
-Version: 1.0.0
+Version: 2.0.0
 
 A custom WordPress theme designed for Maysternya 55 Theatre based on Figma design.
+Features pixel-perfect design with custom Gutenberg blocks for flexible content creation.
 
 == INSTALLATION ==
 
 1. Upload the 'maysternya-theme' folder to /wp-content/themes/
 2. Activate the theme through Appearance > Themes in WordPress admin
-3. Go to Appearance > Customize to configure theme settings
-4. Go to Appearance > Menus to set up navigation menus
+3. Build Gutenberg blocks: cd blocks && npm install && npm run build
+4. Go to Appearance > Customize to configure theme settings
+5. Go to Appearance > Menus to set up navigation menus
+
+See docs/INSTALLATION.md for detailed instructions.
 
 == FEATURES ==
 
+- Pixel-perfect design matching Figma screenshots
 - Responsive design (mobile-first)
+- 17 Custom Gutenberg Blocks
 - Custom post types: Performances, Projects, Team Members
 - Custom navigation with dropdown support
-- Contact modal popup
-- Support/Donate modal
+- Language selector (UK, German, Ukrainian flags)
 - Social media integration
 - Theme Customizer options
-- Multiple page templates:
-  * Front Page
-  * Founder Page
-  * Team Page
-  * Contact Page
-  * Support Us Page
-  * History Page
-  * Manifesto Page
-  * Educational Projects Page
-  * International Projects Page
+
+== CUSTOM GUTENBERG BLOCKS ==
+
+All blocks are available under "Maysternya 55" category in the editor:
+
+Layout & Hero:
+- Banner - Full-width hero with image, text, CTA
+- Full Width Image - Edge-to-edge image display
+
+Text & Headings:
+- Section Separator - Section divider with headline and line
+- Headline + Subline - Large heading with optional subline
+- Text Block - Flexible text with column options
+
+Image Blocks:
+- Image + Text Inside - Image with text overlay
+- Image Grid - Two images side by side
+- Small Image Grid - Multi-image grid
+- Image + Icon - Image with icon overlay
+- Image + Subline - Image with caption
+
+Content Cards:
+- Project Card - Square project display card
+- Event Card - Event listing with date/time
+- Project Landing Card - Large featured project card
+- Educational Project Card - Educational project display
+- Project Compact - Horizontal compact listing
+
+Mixed Content:
+- Text + Image - Two-column text/image layout
+- Carousel - Image/content slider
+
+See docs/CONTENT-CREATOR-GUIDE.md for usage instructions.
+
+== PAGE TEMPLATES ==
+
+All pages use Gutenberg blocks for content:
+- Front Page
+- Founder Page
+- Team Page
+- Contact Page
+- Support Us Page
+- History Page
+- Manifesto Page
+- Educational Projects Page
+- International Projects Page
 
 == MENU LOCATIONS ==
 

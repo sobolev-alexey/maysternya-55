@@ -1,0 +1,9 @@
+Carefully read instructions from INSTRUCTIONS.md, ensure everything is clear or ask for clarification. Then process existing wordpress theme from `wordpress-theme/maysternya-theme` to understand what is currently available. Then process screenshots from `screenshots/blocks` and consider them as styling guidance which you have to follow strictly to create pixel-perfect styling for building blocks. Then 
+
+Then start creating Gutenberg building blocks, add them into the theme, either by following the approach described in this article https://skngrp.medium.com/how-to-create-custom-gutenberg-blocks-with-react-and-wordpress-76bcdd5f5e7b or feel free to propose and implement a better approach for structuring and handling building blocks.
+
+Try to process and implement blocks one by one, to not mix up the context. Once a block is completely created, start with identifying screenshots and stydying designs of the next block, then proceed with implementation, repeat this process iteratively for all blocks.
+
+Once all blocks are implemented, continue with the instruction files for developers and content creators, like described in INSTRUCTIONS.md.
+
+Once all blocks are implemented and instructions files are created, *and only if the context window allows to process a number of large screenshots*, continue with the following: process full page screenshots from  `/screenshots/pages/desktop` for Desktop version and `/screenshots/pages/mobile` for mobile version of every page. Consider file names to understand, which screenshot belongs to which page or sub-page. Then make sure that the blocks you implemented match the design and styling and can be assembled to the pages like on the screenshot. If you find some mistakes in the block implementation, make small corrections and verify again, but only if the context window still allows to proceed. 

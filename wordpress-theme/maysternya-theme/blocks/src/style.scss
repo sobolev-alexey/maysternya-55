@@ -1,0 +1,1276 @@
+/**
+ * Frontend styles for all Maysternya blocks
+ * These styles apply to both editor and frontend
+ */
+
+// Variables matching theme design
+$color-bg: #000000;
+$color-text: #ffffff;
+$color-border: #ffffff;
+$font-heading: 'Kharkiv Tone', sans-serif;
+$font-body: 'Jost', sans-serif;
+
+// Common block styles
+.maysternya-block {
+  width: 100%;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+// Placeholder image styles
+.maysternya-placeholder-image {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+  font-family: $font-body;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+// CTA Button base styles
+.maysternya-cta-button {
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: $font-body;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 1px solid $color-text;
+  background: transparent;
+  color: $color-text;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  
+  &:hover {
+    background: $color-text;
+    color: $color-bg;
+  }
+}
+
+.maysternya-cta-button--filled {
+  background: $color-text;
+  color: $color-bg;
+  
+  &:hover {
+    background: transparent;
+    color: $color-text;
+  }
+}
+
+// Hover-only CTA (visible on mobile, hover on desktop)
+.maysternya-cta-hover-only {
+  @media (min-width: 1024px) {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.maysternya-block:hover .maysternya-cta-hover-only {
+  @media (min-width: 1024px) {
+    opacity: 1;
+  }
+}
+
+// ==========================================
+// BANNER BLOCK
+// ==========================================
+.wp-block-maysternya-banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 40px 24px;
+    max-width: 1200px;
+  }
+  
+  &__pretitle {
+    font-family: $font-body;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: block;
+  }
+  
+  &__title {
+    font-family: $font-heading;
+    font-size: 48px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+    
+    @media (min-width: 768px) {
+      font-size: 80px;
+    }
+    
+    @media (min-width: 1024px) {
+      font-size: 120px;
+    }
+  }
+  
+  &__subtitle {
+    font-family: $font-body;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  // Alignment variants
+  &--align-left &__content {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 80px;
+    
+    @media (max-width: 767px) {
+      padding-left: 24px;
+    }
+  }
+  
+  &--align-right &__content {
+    text-align: right;
+    margin-right: 0;
+    padding-right: 80px;
+    
+    @media (max-width: 767px) {
+      padding-right: 24px;
+    }
+  }
+  
+  // Height variants
+  &--height-full {
+    min-height: 100vh;
+  }
+  
+  &--height-large {
+    min-height: 80vh;
+  }
+  
+  &--height-medium {
+    min-height: 60vh;
+  }
+  
+  &--height-small {
+    min-height: 400px;
+  }
+}
+
+// ==========================================
+// SECTION SEPARATOR BLOCK
+// ==========================================
+.wp-block-maysternya-section-separator {
+  width: 100%;
+  padding: 60px 0 30px;
+  
+  &__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    
+    @media (min-width: 768px) {
+      padding: 0 48px;
+    }
+    
+    @media (min-width: 1200px) {
+      padding: 0 80px;
+    }
+  }
+  
+  &__title {
+    font-family: $font-heading;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    
+    @media (min-width: 768px) {
+      font-size: 48px;
+    }
+  }
+  
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $color-text;
+  }
+  
+  // With subtitle variant
+  &--with-subtitle {
+    .wp-block-maysternya-section-separator__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .wp-block-maysternya-section-separator__title {
+      margin-bottom: 0;
+    }
+  }
+  
+  &__subtitle {
+    font-family: $font-body;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+}
+
+// ==========================================
+// HEADLINE + SUBLINE BLOCK
+// ==========================================
+.wp-block-maysternya-headline-subline {
+  width: 100%;
+  padding: 80px 0;
+  
+  &__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    
+    @media (min-width: 768px) {
+      padding: 0 48px;
+    }
+    
+    @media (min-width: 1200px) {
+      padding: 0 80px;
+    }
+  }
+  
+  &__headline {
+    font-family: $font-heading;
+    font-size: 48px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+    
+    @media (min-width: 768px) {
+      font-size: 72px;
+    }
+    
+    @media (min-width: 1024px) {
+      font-size: 96px;
+    }
+  }
+  
+  &__subline {
+    font-family: $font-body;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    max-width: 600px;
+    
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  
+  // Alignment variants
+  &--align-center {
+    text-align: center;
+    
+    .wp-block-maysternya-headline-subline__subline {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  &--align-right {
+    text-align: right;
+    
+    .wp-block-maysternya-headline-subline__subline {
+      margin-left: auto;
+    }
+  }
+}
+
+// ==========================================
+// TEXT BLOCK
+// ==========================================
+.wp-block-maysternya-text-block {
+  width: 100%;
+  padding: 60px 0;
+  
+  &__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    
+    @media (min-width: 768px) {
+      padding: 0 48px;
+    }
+    
+    @media (min-width: 1200px) {
+      padding: 0 80px;
+    }
+  }
+  
+  &__content {
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 1.8;
+    
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+    
+    p {
+      margin-bottom: 1.5em;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  // Column layouts
+  &--columns-2 &__content {
+    @media (min-width: 768px) {
+      column-count: 2;
+      column-gap: 60px;
+    }
+  }
+  
+  &--columns-3 &__content {
+    @media (min-width: 1024px) {
+      column-count: 3;
+      column-gap: 40px;
+    }
+  }
+  
+  // Narrow variant
+  &--narrow &__inner {
+    max-width: 800px;
+  }
+}
+
+// ==========================================
+// IMAGE + TEXT INSIDE BLOCK
+// ==========================================
+.wp-block-maysternya-image-text-inside {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 2;
+    padding: 60px 24px;
+    text-align: center;
+    max-width: 800px;
+    
+    @media (min-width: 768px) {
+      padding: 80px 48px;
+    }
+  }
+  
+  &__title {
+    font-family: $font-heading;
+    font-size: 36px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    
+    @media (min-width: 768px) {
+      font-size: 56px;
+    }
+  }
+  
+  &__text {
+    font-family: $font-body;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  
+  // Position variants
+  &--content-left &__content {
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 80px;
+    
+    @media (max-width: 767px) {
+      padding-left: 24px;
+    }
+  }
+  
+  &--content-right &__content {
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 80px;
+    
+    @media (max-width: 767px) {
+      padding-right: 24px;
+    }
+  }
+  
+  &--content-bottom &__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 40px;
+  }
+}
+
+// ==========================================
+// PROJECT CARD BLOCK
+// ==========================================
+.wp-block-maysternya-project-card {
+  width: 100%;
+  
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $color-text;
+  }
+  
+  &__image-wrapper {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    margin-bottom: 16px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+  }
+  
+  &__link:hover &__image-wrapper img {
+    transform: scale(1.05);
+  }
+  
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+  }
+  
+  &__badge {
+    font-family: $font-body;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  
+  &__title {
+    font-family: $font-heading;
+    font-size: 28px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
+  }
+  
+  &__meta {
+    text-align: right;
+    font-family: $font-body;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    
+    p {
+      margin: 0;
+    }
+  }
+}
+
+// ==========================================
+// EVENT CARD BLOCK
+// ==========================================
+.wp-block-maysternya-event-card {
+  width: 100%;
+  border: 1px solid $color-border;
+  
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  
+  &__image {
+    flex-shrink: 0;
+    
+    @media (min-width: 768px) {
+      width: 200px;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 16/9;
+      
+      @media (min-width: 768px) {
+        aspect-ratio: 1;
+      }
+    }
+  }
+  
+  &__content {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  &__date {
+    font-family: $font-body;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 16px;
+  }
+  
+  &__title {
+    font-family: $font-heading;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+  }
+  
+  &__description {
+    font-family: $font-body;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  &__location {
+    font-family: $font-body;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+// ==========================================
+// IMAGE GRID BLOCK (2 images)
+// ==========================================
+.wp-block-maysternya-image-grid {
+  width: 100%;
+  
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  &__item {
+    position: relative;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 16/9;
+      
+      @media (min-width: 768px) {
+        aspect-ratio: 4/3;
+      }
+    }
+  }
+  
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+    
+    h3 {
+      font-family: $font-heading;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      
+      @media (min-width: 768px) {
+        font-size: 32px;
+      }
+    }
+    
+    p {
+      font-family: $font-body;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+// ==========================================
+// SMALL IMAGE GRID BLOCK
+// ==========================================
+.wp-block-maysternya-small-image-grid {
+  width: 100%;
+  
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 48px;
+    }
+    
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    
+    @media (min-width: 1200px) {
+      padding: 0 80px;
+    }
+  }
+  
+  &__item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+    h4 {
+      font-family: $font-heading;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 16px;
+    }
+  }
+  
+  &__item:hover &__overlay {
+    opacity: 1;
+  }
+}
+
+// ==========================================
+// CAROUSEL BLOCK
+// ==========================================
+.wp-block-maysternya-carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  
+  &__track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  &__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    
+    @media (min-width: 768px) {
+      flex: 0 0 50%;
+    }
+    
+    @media (min-width: 1024px) {
+      flex: 0 0 33.333%;
+    }
+  }
+  
+  &__image {
+    position: relative;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__caption {
+    padding: 16px 0;
+    text-align: center;
+    
+    h4 {
+      font-family: $font-heading;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    
+    p {
+      font-family: $font-body;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+  }
+  
+  &__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    
+    button {
+      width: 48px;
+      height: 48px;
+      border: 1px solid $color-text;
+      background: $color-bg;
+      color: $color-text;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: $color-text;
+        color: $color-bg;
+      }
+    }
+  }
+  
+  &__nav--prev {
+    left: 24px;
+  }
+  
+  &__nav--next {
+    right: 24px;
+  }
+  
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px 0;
+  }
+  
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid $color-text;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    
+    &--active,
+    &:hover {
+      background: $color-text;
+    }
+  }
+}
+
+// ==========================================
+// IMAGE + ICON BLOCK
+// ==========================================
+.wp-block-maysternya-image-icon {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  
+  &__image {
+    width: 100%;
+    
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+  &__icon {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @media (min-width: 768px) {
+      width: 80px;
+      height: 80px;
+    }
+    
+    img, svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+// ==========================================
+// IMAGE + SUBLINE BLOCK
+// ==========================================
+.wp-block-maysternya-image-subline {
+  width: 100%;
+  
+  &__image {
+    width: 100%;
+    margin-bottom: 16px;
+    
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+  &__subline {
+    font-family: $font-body;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: right;
+    
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+// ==========================================
+// TEXT + IMAGE BLOCK
+// ==========================================
+.wp-block-maysternya-text-image {
+  width: 100%;
+  
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      padding: 80px 48px;
+      align-items: center;
+    }
+    
+    @media (min-width: 1200px) {
+      padding: 100px 80px;
+    }
+  }
+  
+  &__text {
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 1.8;
+    
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+    
+    p {
+      margin-bottom: 1.5em;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+  // Image first variant
+  &--image-first &__image {
+    @media (min-width: 768px) {
+      order: -1;
+    }
+  }
+}
+
+// ==========================================
+// PROJECT COMPACT BLOCK
+// ==========================================
+.wp-block-maysternya-project-compact {
+  width: 100%;
+  border-bottom: 1px solid $color-border;
+  
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+  
+  &__image {
+    flex-shrink: 0;
+    margin-bottom: 16px;
+    
+    @media (min-width: 768px) {
+      width: 150px;
+      margin-bottom: 0;
+    }
+    
+    img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      
+      @media (min-width: 768px) {
+        aspect-ratio: 1;
+      }
+    }
+  }
+  
+  &__content {
+    flex: 1;
+  }
+  
+  &__title {
+    font-family: $font-heading;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+  }
+  
+  &__meta {
+    font-family: $font-body;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    
+    span {
+      &:not(:last-child)::after {
+        content: ' / ';
+      }
+    }
+  }
+  
+  &__link {
+    margin-top: 16px;
+    
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
+}
+
+// ==========================================
+// PROJECT LANDING CARD BLOCK
+// ==========================================
+.wp-block-maysternya-project-landing-card {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  
+  @media (min-width: 768px) {
+    min-height: 500px;
+  }
+  
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 40px 24px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+    
+    @media (min-width: 768px) {
+      padding: 60px 48px;
+    }
+  }
+  
+  &__badge {
+    font-family: $font-body;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: block;
+  }
+  
+  &__title {
+    font-family: $font-heading;
+    font-size: 36px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    
+    @media (min-width: 768px) {
+      font-size: 56px;
+    }
+  }
+  
+  &__meta {
+    font-family: $font-body;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+  }
+}
+
+// ==========================================
+// EDUCATIONAL PROJECT CARD BLOCK
+// ==========================================
+.wp-block-maysternya-educational-project-card {
+  width: 100%;
+  
+  &__image {
+    position: relative;
+    margin-bottom: 16px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  
+  &__badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-family: $font-body;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border: 1px solid $color-text;
+  }
+  
+  &__content {
+    padding: 0 16px;
+  }
+  
+  &__title {
+    font-family: $font-heading;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+  }
+  
+  &__description {
+    font-family: $font-body;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  &__meta {
+    font-family: $font-body;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+// ==========================================
+// FULL WIDTH IMAGE BLOCK
+// ==========================================
+.wp-block-maysternya-full-width-image {
+  width: 100%;
+  
+  &__image {
+    width: 100%;
+    
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+  // Height variants
+  &--height-auto &__image img {
+    height: auto;
+  }
+  
+  &--height-medium &__image {
+    height: 50vh;
+    
+    img {
+      height: 100%;
+    }
+  }
+  
+  &--height-large &__image {
+    height: 70vh;
+    
+    img {
+      height: 100%;
+    }
+  }
+  
+  &--height-full &__image {
+    height: 100vh;
+    
+    img {
+      height: 100%;
+    }
+  }
+}

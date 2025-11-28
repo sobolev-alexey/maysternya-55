@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Manifesto Page
+ * Content should be built using Gutenberg blocks
  * 
  * @package Maysternya
  */
@@ -8,23 +9,15 @@
 get_header();
 ?>
 
-<?php maysternya_breadcrumbs(); ?>
-
-<article class="manifesto-page" data-testid="manifesto-page">
-    <div class="container">
-        <header class="page-header">
-            <span class="page-pretitle"><?php _e('MAIN PAGE/MANIFESTO', 'maysternya'); ?></span>
-            <h1 class="page-title"><?php _e('OUR MANIFESTO', 'maysternya'); ?></h1>
-        </header>
-
-        <div class="manifesto-content">
-            <?php
-            while (have_posts()) : the_post();
-                the_content();
-            endwhile;
-            ?>
-        </div>
-    </div>
-</article>
+<main id="main-content" class="site-main page-manifesto">
+    <?php
+    if (have_posts()) :
+        while (have_posts()) :
+            the_post();
+            the_content();
+        endwhile;
+    endif;
+    ?>
+</main>
 
 <?php get_footer(); ?>

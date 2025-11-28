@@ -1,0 +1,113 @@
+/**
+ * Editor-specific styles for Maysternya blocks
+ * These styles only apply in the WordPress editor
+ */
+
+// Variables
+$color-bg: #000000;
+$color-text: #ffffff;
+$font-heading: 'Kharkiv Tone', sans-serif;
+$font-body: 'Jost', sans-serif;
+
+// Editor preview container
+.maysternya-block-preview {
+  background: $color-bg;
+  color: $color-text;
+  padding: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  min-height: 100px;
+}
+
+// Editor placeholder styling
+.maysternya-editor-placeholder {
+  background: #1a1a1a;
+  border: 2px dashed #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  
+  &__text {
+    font-family: $font-body;
+    font-size: 14px;
+    color: #888;
+  }
+}
+
+// Block controls in editor
+.maysternya-block-controls {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+// Rich text placeholder styling
+.maysternya-block-preview .rich-text:empty::before {
+  color: #666;
+  font-style: italic;
+}
+
+// Banner block editor preview
+.wp-block-maysternya-banner {
+  &.is-selected {
+    outline: 2px solid #007cba;
+  }
+}
+
+// Section separator editor
+.wp-block-maysternya-section-separator {
+  &.is-selected {
+    outline: 2px solid #007cba;
+  }
+}
+
+// Project card editor preview
+.wp-block-maysternya-project-card {
+  &.is-selected {
+    outline: 2px solid #007cba;
+  }
+}
+
+// Event card editor preview
+.wp-block-maysternya-event-card {
+  &.is-selected {
+    outline: 2px solid #007cba;
+  }
+}
+
+// Make sure the editor respects the dark theme
+.editor-styles-wrapper {
+  .wp-block-maysternya-banner,
+  .wp-block-maysternya-section-separator,
+  .wp-block-maysternya-headline-subline,
+  .wp-block-maysternya-text-block,
+  .wp-block-maysternya-image-text-inside,
+  .wp-block-maysternya-project-card,
+  .wp-block-maysternya-event-card,
+  .wp-block-maysternya-image-grid,
+  .wp-block-maysternya-small-image-grid,
+  .wp-block-maysternya-carousel,
+  .wp-block-maysternya-image-icon,
+  .wp-block-maysternya-image-subline,
+  .wp-block-maysternya-text-image,
+  .wp-block-maysternya-project-compact,
+  .wp-block-maysternya-project-landing-card,
+  .wp-block-maysternya-educational-project-card,
+  .wp-block-maysternya-full-width-image {
+    background: $color-bg;
+    color: $color-text;
+  }
+}
+
+// Inspector controls custom styling
+.maysternya-inspector-section {
+  .components-base-control {
+    margin-bottom: 16px;
+  }
+  
+  .components-toggle-control {
+    margin-bottom: 8px;
+  }
+}
